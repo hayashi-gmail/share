@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>歌詞一覧</title>
+<title>Lyrics</title>
 <style>
 :root {
   --bg: #fafaf8; --fg: #1d1d1b; --muted: #6b6b66; --line: #e2e2dc;
@@ -72,7 +72,7 @@ body:has(.song:target) #list { display: none; }
   th:nth-child(1), td:nth-child(1) { display: none; }
 }
 
-/* デュエット列: 通常は「デュエット」、スマートフォン縦向きでは短い「Duo」にして幅を詰める */
+/* デュエット列: 通常は「Duet」、スマートフォン縦向きでは短い「Duo」にして幅を詰める */
 .short { display: none; }
 @media (orientation: portrait) and (max-width: 600px) {
   th.duet .full { display: none; }
@@ -86,24 +86,24 @@ body:has(.song:target) #list { display: none; }
 </head>
 <body>
 <div id="list">
-  <h1>歌詞一覧</h1>
-  <p class="count"><span id="shown">218</span> / 218 曲</p>
-  <input type="search" id="filter" placeholder="曲名・歌手で絞り込み">
-  <div class="langs" role="group" aria-label="言語で絞り込み">
-    <span class="label">言語</span>
-    <button type="button" data-lang="" aria-pressed="true">すべて <span>218</span></button>
-    <button type="button" data-lang="English" aria-pressed="false">英語 <span>214</span></button>
-    <button type="button" data-lang="Spanish" aria-pressed="false">スペイン語 <span>6</span></button>
-    <button type="button" data-lang="Korean" aria-pressed="false">韓国語 <span>2</span></button>
-    <button type="button" data-lang="Portuguese" aria-pressed="false">ポルトガル語 <span>1</span></button>
+  <h1>Lyrics</h1>
+  <p class="count"><span id="shown">218</span> / 218 songs</p>
+  <input type="search" id="filter" placeholder="Filter by title or artist">
+  <div class="langs" role="group" aria-label="Filter by language">
+    <span class="label">Language</span>
+    <button type="button" data-lang="" aria-pressed="true">All <span>218</span></button>
+    <button type="button" data-lang="English" aria-pressed="false">English <span>214</span></button>
+    <button type="button" data-lang="Spanish" aria-pressed="false">Spanish <span>6</span></button>
+    <button type="button" data-lang="Korean" aria-pressed="false">Korean <span>2</span></button>
+    <button type="button" data-lang="Portuguese" aria-pressed="false">Portuguese <span>1</span></button>
   </div>
   <table>
     <thead><tr>
       <th class="num"><button data-key="id" aria-sort="ascending">Id</button></th>
-      <th><button data-key="title">曲名</button></th>
-      <th><button data-key="artist">歌手</button></th>
-      <th class="num"><button data-key="year">年</button></th>
-      <th class="center duet"><button data-key="duet" aria-label="デュエット"><span class="full">デュエット</span><span class="short">Duo</span></button></th>
+      <th><button data-key="title">Title</button></th>
+      <th><button data-key="artist">Artist</button></th>
+      <th class="num"><button data-key="year">Year</button></th>
+      <th class="center duet"><button data-key="duet" aria-label="Duet"><span class="full">Duet</span><span class="short">Duo</span></button></th>
     </tr></thead>
     <tbody>
 <tr data-id="1" data-title="24K Magic" data-artist="Bruno Mars" data-year="2016" data-duet="0" data-langs="English"><td class="num">1</td><td><a href="#song-1">24K Magic</a></td><td>Bruno Mars</td><td class="num">2016</td><td class="center duet"></td></tr>
@@ -327,7 +327,7 @@ body:has(.song:target) #list { display: none; }
     </tbody>
   </table>
 </div>
-<section class="song" id="song-1"><a class="back" href="#">← 一覧へ戻る</a><h2>24K Magic</h2><p class="meta">Bruno Mars ・ 2016</p><div class="lyrics">Tonight
+<section class="song" id="song-1"><a class="back" href="#">← Back to list</a><h2>24K Magic</h2><p class="meta">Bruno Mars · 2016</p><div class="lyrics">Tonight
 I just want to take you higher
 Throw your hands up in the sky
 Let&#x27;s set this party off right
@@ -423,7 +423,7 @@ Head to toe so player
 Uh, look out
 
 (24 karat magic, magic, magic)</div></section>
-<section class="song" id="song-2"><a class="back" href="#">← 一覧へ戻る</a><h2>2U</h2><p class="meta">David Guetta, Justin Bieber ・ 2017</p><div class="lyrics">No limit in the sky
+<section class="song" id="song-2"><a class="back" href="#">← Back to list</a><h2>2U</h2><p class="meta">David Guetta, Justin Bieber · 2017</p><div class="lyrics">No limit in the sky
 That I won&#x27;t fly for ya
 No amount of tears in my eyes
 That I won&#x27;t cry for ya, oh no
@@ -477,7 +477,7 @@ Don&#x27;t be blind
 Watch me speak from my heart
 When it comes to you
 Comes to you</div></section>
-<section class="song" id="song-3"><a class="back" href="#">← 一覧へ戻る</a><h2>Africa</h2><p class="meta">Toto ・ 1982</p><div class="lyrics">I hear the drums echoing tonight
+<section class="song" id="song-3"><a class="back" href="#">← Back to list</a><h2>Africa</h2><p class="meta">Toto · 1982</p><div class="lyrics">I hear the drums echoing tonight
 But she hears only whispers of some quiet conversation
 She&#x27;s coming in 12:30 flight
 The moonlit wings reflect the stars that guide me towards salvation
@@ -509,7 +509,7 @@ I bless the rains down in Africa, I bless the rains down in Africa
 I bless the rains down in Africa, I bless the rains down in Africa
 I bless the rains down in Africa
 Gonna take some time to do the things we never had</div></section>
-<section class="song" id="song-4"><a class="back" href="#">← 一覧へ戻る</a><h2>All I Want for Christmas Is You</h2><p class="meta">Mariah Carey ・ 1994</p><div class="lyrics">I don&#x27;t want a lot for Christmas
+<section class="song" id="song-4"><a class="back" href="#">← Back to list</a><h2>All I Want for Christmas Is You</h2><p class="meta">Mariah Carey · 1994</p><div class="lyrics">I don&#x27;t want a lot for Christmas
 There is just one thing I need
 I don&#x27;t care about the presents
 Underneath the Christmas tree
@@ -571,7 +571,7 @@ Baby, all I want for Christmas is you
 You, baby
 
 All I want for Christmas is you, baby [repeat with ad-libs until fade]</div></section>
-<section class="song" id="song-5"><a class="back" href="#">← 一覧へ戻る</a><h2>All of Me</h2><p class="meta">John Legend ・ 2013</p><div class="lyrics">[Verse 1:]
+<section class="song" id="song-5"><a class="back" href="#">← Back to list</a><h2>All of Me</h2><p class="meta">John Legend · 2013</p><div class="lyrics">[Verse 1:]
 What would I do without your smart mouth?
 Drawing me in, and you kicking me out
 You&#x27;ve got my head spinning, no kidding, I can&#x27;t pin you down
@@ -640,7 +640,7 @@ And you give me all of you
 
 I give you all of me
 And you give me all of you, oh oh</div></section>
-<section class="song" id="song-6"><a class="back" href="#">← 一覧へ戻る</a><h2>Always</h2><p class="meta">Atlantic Starr ・ 1987 ・ デュエット</p><div class="lyrics">Girl, you are to me, all that a woman should be,
+<section class="song" id="song-6"><a class="back" href="#">← Back to list</a><h2>Always</h2><p class="meta">Atlantic Starr · 1987 · Duet</p><div class="lyrics">Girl, you are to me, all that a woman should be,
 And I dedicate my life to you always.
 A love like yours is rare,
 It must have been sent from up above
@@ -673,7 +673,7 @@ For me and you forever will be
 And I will love you so for always
 
 Ooooooh, I will love you so for always</div></section>
-<section class="song" id="song-7"><a class="back" href="#">← 一覧へ戻る</a><h2>Always Be My Baby</h2><p class="meta">Mariah Carey ・ 1996</p><div class="lyrics">We were as one, babe, for a moment in time
+<section class="song" id="song-7"><a class="back" href="#">← Back to list</a><h2>Always Be My Baby</h2><p class="meta">Mariah Carey · 1996</p><div class="lyrics">We were as one, babe, for a moment in time
 And it seemed everlasting
 That you would always be mine
 Now you want to be free
@@ -729,7 +729,7 @@ And we&#x27;ll linger on
 Time can&#x27;t erase a feeling this strong
 No way you&#x27;re ever gonna shake me
 Oh darling, &#x27;cause you&#x27;ll always be my baby</div></section>
-<section class="song" id="song-8"><a class="back" href="#">← 一覧へ戻る</a><h2>Angie</h2><p class="meta">The Rolling Stones ・ 1973</p><div class="lyrics">Angie, Angie
+<section class="song" id="song-8"><a class="back" href="#">← Back to list</a><h2>Angie</h2><p class="meta">The Rolling Stones · 1973</p><div class="lyrics">Angie, Angie
 When will those clouds all disappear?
 Angie, Angie
 Where will it lead us from here?
@@ -762,7 +762,7 @@ But Angie, Angie
 Ain&#x27;t it good to be alive
 
 Angie, Angie, you can&#x27;t say we never tried.</div></section>
-<section class="song" id="song-9"><a class="back" href="#">← 一覧へ戻る</a><h2>Anaconda</h2><p class="meta">Nicki Minaj ・ 2014</p><div class="lyrics">My Anaconda don&#x27;t...
+<section class="song" id="song-9"><a class="back" href="#">← Back to list</a><h2>Anaconda</h2><p class="meta">Nicki Minaj · 2014</p><div class="lyrics">My Anaconda don&#x27;t...
 My Anaconda don&#x27;t...
 My Anaconda don&#x27;t want none unless you got buns hun
 
@@ -850,7 +850,7 @@ I wanna see all the big fat ass bitches in the motherfucking club
 Fuck you if you skinny bitches. What? Yeah. Ha-ha, ha...
 
 Yeah. I got a big fat ass. Come on!</div></section>
-<section class="song" id="song-10"><a class="back" href="#">← 一覧へ戻る</a><h2>Arthur&#x27;s Theme (Best That You Can Do)</h2><p class="meta">Christopher Cross ・ 1981</p><div class="lyrics">Once in your life you find her
+<section class="song" id="song-10"><a class="back" href="#">← Back to list</a><h2>Arthur&#x27;s Theme (Best That You Can Do)</h2><p class="meta">Christopher Cross · 1981</p><div class="lyrics">Once in your life you find her
 Someone that turns your heart around
 And next thing you know you&#x27;re closing down the town
 Wake up and it&#x27;s still with you
@@ -881,7 +881,7 @@ I know it&#x27;s crazy but it&#x27;s true
 If you get caught between the Moon and New York City
 The best that you can do
 The best that you can do is fall in love</div></section>
-<section class="song" id="song-11"><a class="back" href="#">← 一覧へ戻る</a><h2>As Long as You Love Me</h2><p class="meta">Justin Bieber, Big Sean ・ 2012 ・ デュエット</p><div class="lyrics">As long as you love me
+<section class="song" id="song-11"><a class="back" href="#">← Back to list</a><h2>As Long as You Love Me</h2><p class="meta">Justin Bieber, Big Sean · 2012 · Duet</p><div class="lyrics">As long as you love me
 As long as you love me
 As long as you love me
 
@@ -948,7 +948,7 @@ love me, love me, love me
 As long as you love, love me, love me
 As long as you love, love me, love me
 As long as you love me</div></section>
-<section class="song" id="song-12"><a class="back" href="#">← 一覧へ戻る</a><h2>A Whole New World</h2><p class="meta">Peabo Bryson, Regina Belle ・ 1992 ・ デュエット</p><div class="lyrics">I can show you the world
+<section class="song" id="song-12"><a class="back" href="#">← Back to list</a><h2>A Whole New World</h2><p class="meta">Peabo Bryson, Regina Belle · 1992 · Duet</p><div class="lyrics">I can show you the world
 Shining, shimmering, splendid
 Tell me, princess, now when did
 You last let your heart decide?
@@ -1010,7 +1010,7 @@ That&#x27;s where we&#x27;ll be / where we&#x27;ll be
 A thrilling chase
 A wondrous place
 For you and me</div></section>
-<section class="song" id="song-13"><a class="back" href="#">← 一覧へ戻る</a><h2>Baby</h2><p class="meta">Justin Bieber, Ludacris ・ 2010 ・ デュエット</p><div class="lyrics">Oh Whoa
+<section class="song" id="song-13"><a class="back" href="#">← Back to list</a><h2>Baby</h2><p class="meta">Justin Bieber, Ludacris · 2010 · Duet</p><div class="lyrics">Oh Whoa
 Oh Whoa
 Oh Whoa
 
@@ -1088,7 +1088,7 @@ Now I&#x27;m all gone
 (Yeah, yeah, yeah)
 Now I&#x27;m all gone, gone, gone, gone
 I&#x27;m gone</div></section>
-<section class="song" id="song-14"><a class="back" href="#">← 一覧へ戻る</a><h2>Back in Town</h2><p class="meta">Matt Dusk ・ 2006</p><div class="lyrics">It seems just like yesterday when we were standing here
+<section class="song" id="song-14"><a class="back" href="#">← Back to list</a><h2>Back in Town</h2><p class="meta">Matt Dusk · 2006</p><div class="lyrics">It seems just like yesterday when we were standing here
 Yankee&#x27;s hat upon my head and your voice in my ear
 I&#x27;ve talked about the future and all the things we&#x27;d do
 I never thought your lovin&#x27; words would frighten me from you.
@@ -1138,7 +1138,7 @@ So let&#x27;s jump off of this merry-go-round
 &#x27;cuz your man in back in town
 So let&#x27;s jump off of this merry-go-round
 &#x27;cuz your man in back in town.</div></section>
-<section class="song" id="song-15"><a class="back" href="#">← 一覧へ戻る</a><h2>Bad Romance</h2><p class="meta">Lady Gaga ・ 2009</p><div class="lyrics">Oh-oh-oh-oh-oooh-oh-oh-oh-oooh-oh-oh-oh!
+<section class="song" id="song-15"><a class="back" href="#">← Back to list</a><h2>Bad Romance</h2><p class="meta">Lady Gaga · 2009</p><div class="lyrics">Oh-oh-oh-oh-oooh-oh-oh-oh-oooh-oh-oh-oh!
 Caught in a bad romance
 Oh-oh-oh-oh-oooh-oh-oh-oh-oooh-oh-oh-oh!
 Caught in a bad romance
@@ -1283,7 +1283,7 @@ Rah-rah-ah-ah-ah-ah!
 Rama-ramama-ah
 GaGa-ooh-la-la!
 Want your bad romance</div></section>
-<section class="song" id="song-16"><a class="back" href="#">← 一覧へ戻る</a><h2>Beat It</h2><p class="meta">Michael Jackson ・ 1983</p><div class="lyrics">They told him, &quot;Don&#x27;t you ever come around here.
+<section class="song" id="song-16"><a class="back" href="#">← Back to list</a><h2>Beat It</h2><p class="meta">Michael Jackson · 1983</p><div class="lyrics">They told him, &quot;Don&#x27;t you ever come around here.
 Don&#x27;t wanna see your face. You better disappear.&quot;
 The fire&#x27;s in their eyes and their words are really clear
 So beat it, just beat it
@@ -1332,7 +1332,7 @@ It doesn&#x27;t matter who&#x27;s wrong or right
 
 Just beat it, beat it
 Beat it, beat it, beat it</div></section>
-<section class="song" id="song-17"><a class="back" href="#">← 一覧へ戻る</a><h2>Beautiful Now</h2><p class="meta">Zedd, Jon Bellion ・ 2015</p><div class="lyrics">I see what you&#x27;re wearing, there&#x27;s nothing beneath it
+<section class="song" id="song-17"><a class="back" href="#">← Back to list</a><h2>Beautiful Now</h2><p class="meta">Zedd, Jon Bellion · 2015</p><div class="lyrics">I see what you&#x27;re wearing, there&#x27;s nothing beneath it
 Forgive me for staring, forgive me for breathing
 We might not know why, we might not know how
 But baby, tonight, we&#x27;re beautiful now
@@ -1378,7 +1378,7 @@ We&#x27;re beautiful now
 We&#x27;re beautiful now
 We&#x27;re beautiful now
 We&#x27;re beautiful now, we&#x27;re beautiful</div></section>
-<section class="song" id="song-18"><a class="back" href="#">← 一覧へ戻る</a><h2>Beginning Today</h2><p class="meta">Agot Isidro ・ 1995</p><div class="lyrics">Beginning today I promise you
+<section class="song" id="song-18"><a class="back" href="#">← Back to list</a><h2>Beginning Today</h2><p class="meta">Agot Isidro · 1995</p><div class="lyrics">Beginning today I promise you
 I give my heart to you
 Beginning today I promise to
 Never part from you
@@ -1410,7 +1410,7 @@ Beginning today
 Beginning today
 (I promise you I give my heart to you)
 Beginning today</div></section>
-<section class="song" id="song-19"><a class="back" href="#">← 一覧へ戻る</a><h2>Billie Jean</h2><p class="meta">Michael Jackson ・ 1983</p><div class="lyrics">[1st verse]
+<section class="song" id="song-19"><a class="back" href="#">← Back to list</a><h2>Billie Jean</h2><p class="meta">Michael Jackson · 1983</p><div class="lyrics">[1st verse]
  She was more like a beauty queen from a movie scene
  I said don&#x27;t mind, but what do you mean I am the one
  Who will dance on the floor in the round
@@ -1480,7 +1480,7 @@ Beginning today</div></section>
  Billie Jean is not my lover
  Billie Jean is not my lover
  Billie Jean is not my lover</div></section>
-<section class="song" id="song-20"><a class="back" href="#">← 一覧へ戻る</a><h2>Borderline</h2><p class="meta">Madonna ・ 1984</p><div class="lyrics">Something in the way you love me won&#x27;t&#x27; let me be
+<section class="song" id="song-20"><a class="back" href="#">← Back to list</a><h2>Borderline</h2><p class="meta">Madonna · 1984</p><div class="lyrics">Something in the way you love me won&#x27;t&#x27; let me be
 I don&#x27;t want to be your prisoner, so baby, won&#x27;t you set me free
 Stop playing with my heart
 Finish what you start
@@ -1552,7 +1552,7 @@ Keep pushing me
 Keep pushing my love
 
 Come on baby, Come on darling, yeah, Da-da-da-da…</div></section>
-<section class="song" id="song-21"><a class="back" href="#">← 一覧へ戻る</a><h2>Boyfriend</h2><p class="meta">Justin Bieber ・ 2012</p><div class="lyrics">[Verse 1:]
+<section class="song" id="song-21"><a class="back" href="#">← Back to list</a><h2>Boyfriend</h2><p class="meta">Justin Bieber · 2012</p><div class="lyrics">[Verse 1:]
 If I was your boyfriend, I&#x27;d never let you go
 I can take you places you ain&#x27;t never been before
 Baby, take a chance or you&#x27;ll never ever know
@@ -1614,7 +1614,7 @@ If I was your boyfriend
 Na na na, na na na, na na na ey
 Na na na, na na na, na na na ey
 If I was your boyfriend</div></section>
-<section class="song" id="song-22"><a class="back" href="#">← 一覧へ戻る</a><h2>Boyfriend</h2><p class="meta">Madilyn Bailey ・ 2012</p><div class="lyrics">[Verse 1]
+<section class="song" id="song-22"><a class="back" href="#">← Back to list</a><h2>Boyfriend</h2><p class="meta">Madilyn Bailey · 2012</p><div class="lyrics">[Verse 1]
 If I was your girlfriend, I’d never let you go
 I can take you places you ain&#x27;t never been before
 Baby, take a chance or you’ll never ever know
@@ -1663,7 +1663,7 @@ Na na na, na na na, na na na ey
 Na na na, na na na, na na na oh
 Na na na, na na na, na na na
 If I was your girlfriend</div></section>
-<section class="song" id="song-23"><a class="back" href="#">← 一覧へ戻る</a><h2>Break Free</h2><p class="meta">Ariana Grande, Zedd ・ 2014</p><div class="lyrics">If you want it, take it
+<section class="song" id="song-23"><a class="back" href="#">← Back to list</a><h2>Break Free</h2><p class="meta">Ariana Grande, Zedd · 2014</p><div class="lyrics">If you want it, take it
 I should&#x27;ve said it before
 Tried to hide it, fake it
 I can&#x27;t pretend anymore
@@ -1711,7 +1711,7 @@ This is the part when I say I don&#x27;t want ya
 I&#x27;m stronger than I&#x27;ve been before
 This is the part when I break free
 &#x27;Cause I can&#x27;t resist it no more</div></section>
-<section class="song" id="song-24"><a class="back" href="#">← 一覧へ戻る</a><h2>Can&#x27;t Take My Eyes Off You</h2><p class="meta">Boys Town Gang ・ 1982</p><div class="lyrics">You&#x27;re just too good to be true
+<section class="song" id="song-24"><a class="back" href="#">← Back to list</a><h2>Can&#x27;t Take My Eyes Off You</h2><p class="meta">Boys Town Gang · 1982</p><div class="lyrics">You&#x27;re just too good to be true
 Can&#x27;t take my eyes off of you
 You&#x27;d be like heaven to touch
 Oh, I want hold you so much
@@ -1773,7 +1773,7 @@ I need you baby.
 To warm the lonely night
 I love you baby
 Trust in me when I say</div></section>
-<section class="song" id="song-25"><a class="back" href="#">← 一覧へ戻る</a><h2>Cherish</h2><p class="meta">Kool &amp; the Gang ・ 1985</p><div class="lyrics">Let&#x27;s take a walk together near the ocean shore
+<section class="song" id="song-25"><a class="back" href="#">← Back to list</a><h2>Cherish</h2><p class="meta">Kool &amp; the Gang · 1985</p><div class="lyrics">Let&#x27;s take a walk together near the ocean shore
 Hand in hand you and I
 Let&#x27;s cherish every moment we have been given
 The time is passing by
@@ -1815,8 +1815,8 @@ Cherish the love we have, we should cherish the life we live
 Cherish the love, cherish the life, cherish the love
 Cherish the love we have, for as long as we both shall live
 Cherish the love, cherish the life, cherish the love</div></section>
-<section class="song" id="song-26"><a class="back" href="#">← 一覧へ戻る</a><h2>Chiquitita</h2><p class="meta">ABBA ・ 1979</p><div class="lyrics"></div></section>
-<section class="song" id="song-27"><a class="back" href="#">← 一覧へ戻る</a><h2>Closer</h2><p class="meta">The Chainsmokers, Halsey ・ 2016 ・ デュエット</p><div class="lyrics">Hey, I was doing just fine before I met you
+<section class="song" id="song-26"><a class="back" href="#">← Back to list</a><h2>Chiquitita</h2><p class="meta">ABBA · 1979</p><div class="lyrics"></div></section>
+<section class="song" id="song-27"><a class="back" href="#">← Back to list</a><h2>Closer</h2><p class="meta">The Chainsmokers, Halsey · 2016 · Duet</p><div class="lyrics">Hey, I was doing just fine before I met you
 I drink too much and that&#x27;s an issue
 But I&#x27;m OK
 Hey, you tell your friends it was nice to meet them
@@ -1888,7 +1888,7 @@ No, we ain&#x27;t ever getting older
 
 We ain&#x27;t ever getting older
 No, we ain&#x27;t ever getting older</div></section>
-<section class="song" id="song-28"><a class="back" href="#">← 一覧へ戻る</a><h2>Company</h2><p class="meta">Justin Bieber ・ 2016</p><div class="lyrics">Can we, we keep, keep each other company?
+<section class="song" id="song-28"><a class="back" href="#">← Back to list</a><h2>Company</h2><p class="meta">Justin Bieber · 2016</p><div class="lyrics">Can we, we keep, keep each other company?
 Maybe we can be, be each other&#x27;s company
 Oh, company
 
@@ -1932,7 +1932,7 @@ Be each other&#x27;s company?
 Can we, we keep, keep each other company?
 Maybe we can be, be each other&#x27;s company
 Oh, company</div></section>
-<section class="song" id="song-29"><a class="back" href="#">← 一覧へ戻る</a><h2>Count on Me</h2><p class="meta">Bruno Mars ・ 2011</p><div class="lyrics">If you ever find yourself stuck in the middle of the sea,
+<section class="song" id="song-29"><a class="back" href="#">← Back to list</a><h2>Count on Me</h2><p class="meta">Bruno Mars · 2011</p><div class="lyrics">If you ever find yourself stuck in the middle of the sea,
 I&#x27;ll sail the world to find you
 If you ever find yourself lost in the dark and you can&#x27;t see,
 I&#x27;ll be the light to guide you
@@ -2042,8 +2042,8 @@ And you&#x27;ll be there
 Ooooooh, oooohhh
 
 You can count on me &#x27;cause I can count on you</div></section>
-<section class="song" id="song-30"><a class="back" href="#">← 一覧へ戻る</a><h2>Daydream Believer</h2><p class="meta">The Monkees ・ 1967</p><div class="lyrics"></div></section>
-<section class="song" id="song-31"><a class="back" href="#">← 一覧へ戻る</a><h2>Dedication</h2><p class="meta">Bay City Rollers ・ 1976</p><div class="lyrics">I phoned the local station
+<section class="song" id="song-30"><a class="back" href="#">← Back to list</a><h2>Daydream Believer</h2><p class="meta">The Monkees · 1967</p><div class="lyrics"></div></section>
+<section class="song" id="song-31"><a class="back" href="#">← Back to list</a><h2>Dedication</h2><p class="meta">Bay City Rollers · 1976</p><div class="lyrics">I phoned the local station
 I kinda like the things they&#x27;re playing
 So I settled down to listen nice and easy.
 The dj plays our kind of music
@@ -2086,7 +2086,7 @@ As long as you&#x27;re a part of me
 The song will play on endlessly
 I hope my dedication&#x27;s gettin&#x27; thru
 Dedication&#x27;s playing just for you</div></section>
-<section class="song" id="song-32"><a class="back" href="#">← 一覧へ戻る</a><h2>Despacito</h2><p class="meta">Luis Fonsi, Daddy Yankee ・ 2017 ・ デュエット</p><div class="lyrics">Ay
+<section class="song" id="song-32"><a class="back" href="#">← Back to list</a><h2>Despacito</h2><p class="meta">Luis Fonsi, Daddy Yankee · 2017 · Duet</p><div class="lyrics">Ay
 Fonsi
 DY
 Oh
@@ -2183,7 +2183,7 @@ Nos vamos pegando, poquito a poquito
 Hasta provocar tus gritos
 Y que olvides tu apellido (DY)
 Despacito</div></section>
-<section class="song" id="song-33"><a class="back" href="#">← 一覧へ戻る</a><h2>Despacito (Remix)</h2><p class="meta">Luis Fonsi, Daddy Yankee, Justin Bieber ・ 2017 ・ デュエット</p><div class="lyrics">[Justin Bieber:]
+<section class="song" id="song-33"><a class="back" href="#">← Back to list</a><h2>Despacito (Remix)</h2><p class="meta">Luis Fonsi, Daddy Yankee, Justin Bieber · 2017 · Duet</p><div class="lyrics">[Justin Bieber:]
 Come on over in my direction
 So thankful for that, it&#x27;s such a blessin&#x27;, yeah
 Turn every situation into Heaven, yeah
@@ -2311,7 +2311,7 @@ Y que olvides tu apellido (D.Y.)
 
 [Justin Bieber:]
 Despacito</div></section>
-<section class="song" id="song-34"><a class="back" href="#">← 一覧へ戻る</a><h2>Dirty Work</h2><p class="meta">Austin Mahone ・ 2015</p><div class="lyrics">And now everybody to the dancefloor
+<section class="song" id="song-34"><a class="back" href="#">← Back to list</a><h2>Dirty Work</h2><p class="meta">Austin Mahone · 2015</p><div class="lyrics">And now everybody to the dancefloor
 
 Rolling my sleeves up in here
 To make you smile ear to ear
@@ -2390,7 +2390,7 @@ Go and get your body moving
 You know it ain&#x27;t no nine to five
 We&#x27;re going sundown to sunrise
 Dirty work</div></section>
-<section class="song" id="song-35"><a class="back" href="#">← 一覧へ戻る</a><h2>Down Under</h2><p class="meta">Men at Work ・ 1981</p><div class="lyrics">Traveling in a fried-out Kombie
+<section class="song" id="song-35"><a class="back" href="#">← Back to list</a><h2>Down Under</h2><p class="meta">Men at Work · 1981</p><div class="lyrics">Traveling in a fried-out Kombie
 On a hippie trail, head full of zombie
 I met a strange lady, she made me nervous
 She took me in and gave me breakfast
@@ -2447,7 +2447,7 @@ You better run, you better take cover.&quot;
 Where women glow and men plunder?
 Can&#x27;t you hear, can&#x27;t you hear the thunder?
 You better run, you better take cover.&quot;</div></section>
-<section class="song" id="song-36"><a class="back" href="#">← 一覧へ戻る</a><h2>Especially for You</h2><p class="meta">Kylie Minogue, Jason Donovan ・ 1988 ・ デュエット</p><div class="lyrics">Especially for you
+<section class="song" id="song-36"><a class="back" href="#">← Back to list</a><h2>Especially for You</h2><p class="meta">Kylie Minogue, Jason Donovan · 1988 · Duet</p><div class="lyrics">Especially for you
 I wanna let you know
 What I was going through
 All the time we were apart
@@ -2510,7 +2510,7 @@ And now we&#x27;re back together, together
 I wanna show you my heart is oh so true
 And all the love I have is
 Especially for you</div></section>
-<section class="song" id="song-37"><a class="back" href="#">← 一覧へ戻る</a><h2>Every Woman in the World</h2><p class="meta">Air Supply ・ 1980</p><div class="lyrics">Overnight scenes, dinner and wine, Saturday girls
+<section class="song" id="song-37"><a class="back" href="#">← Back to list</a><h2>Every Woman in the World</h2><p class="meta">Air Supply · 1980</p><div class="lyrics">Overnight scenes, dinner and wine, Saturday girls
 I was never in love, never had the time
 In my hustle and hurry world
 Laughing myself to sleep, waking up lonely
@@ -2544,7 +2544,7 @@ Girl you&#x27;re every woman in the world to me
 You&#x27;re my fantasy, you&#x27;re my reality
 Girl you&#x27;re every woman in the world to me
 You&#x27;re everything I need, you&#x27;re everything to me</div></section>
-<section class="song" id="song-38"><a class="back" href="#">← 一覧へ戻る</a><h2>Feel This Moment</h2><p class="meta">Pitbull, Christina Aguilera ・ 2013 ・ デュエット</p><div class="lyrics">[Pitbull:]
+<section class="song" id="song-38"><a class="back" href="#">← Back to list</a><h2>Feel This Moment</h2><p class="meta">Pitbull, Christina Aguilera · 2013 · Duet</p><div class="lyrics">[Pitbull:]
  Ask for money
  And get advice.
  Ask for advice,
@@ -2681,7 +2681,7 @@ You&#x27;re everything I need, you&#x27;re everything to me</div></section>
  Whoa, whoa oh oh
  I just want to feel
  This moment.</div></section>
-<section class="song" id="song-39"><a class="back" href="#">← 一覧へ戻る</a><h2>Feliz Navidad</h2><p class="meta">José Feliciano ・ 1970</p><div class="lyrics">Feliz navidad
+<section class="song" id="song-39"><a class="back" href="#">← Back to list</a><h2>Feliz Navidad</h2><p class="meta">José Feliciano · 1970</p><div class="lyrics">Feliz navidad
 Feliz navidad
 Feliz navidad
 Prospero año y felicidad
@@ -2707,7 +2707,7 @@ Feliz Navidad
 Feliz Navidad
 Feliz Navidad
 Prospero año y felicidad</div></section>
-<section class="song" id="song-40"><a class="back" href="#">← 一覧へ戻る</a><h2>Flashlight</h2><p class="meta">Jessie J ・ 2015</p><div class="lyrics">When tomorrow comes
+<section class="song" id="song-40"><a class="back" href="#">← Back to list</a><h2>Flashlight</h2><p class="meta">Jessie J · 2015</p><div class="lyrics">When tomorrow comes
 I&#x27;ll be on my own
 Feeling frightened of
 The things that I don&#x27;t know
@@ -2772,8 +2772,8 @@ You&#x27;re my flashlight
 Light light ye-yeah
 
 You&#x27;re my flashlight</div></section>
-<section class="song" id="song-41"><a class="back" href="#">← 一覧へ戻る</a><h2>Girls Just Want to Have Fun</h2><p class="meta">Cyndi Lauper ・ 1983</p><div class="lyrics"></div></section>
-<section class="song" id="song-42"><a class="back" href="#">← 一覧へ戻る</a><h2>Girls Like You</h2><p class="meta">Maroon 5, Cardi B ・ 2018 ・ デュエット</p><div class="lyrics">[Adam Levine:]
+<section class="song" id="song-41"><a class="back" href="#">← Back to list</a><h2>Girls Just Want to Have Fun</h2><p class="meta">Cyndi Lauper · 1983</p><div class="lyrics"></div></section>
+<section class="song" id="song-42"><a class="back" href="#">← Back to list</a><h2>Girls Like You</h2><p class="meta">Maroon 5, Cardi B · 2018 · Duet</p><div class="lyrics">[Adam Levine:]
 Spent 24 hours, I need more hours with you
 You spent the weekend getting even, ooh
 We spent the late nights making things right between us
@@ -2873,7 +2873,7 @@ I need a girl like you,
 Yeah, yeah, yeah
 Yeah, yeah, yeah
 I need a girl like you</div></section>
-<section class="song" id="song-43"><a class="back" href="#">← 一覧へ戻る</a><h2>Good Time</h2><p class="meta">Owl City, Carly Rae Jepsen ・ 2012 ・ デュエット</p><div class="lyrics">Hmm,mm
+<section class="song" id="song-43"><a class="back" href="#">← Back to list</a><h2>Good Time</h2><p class="meta">Owl City, Carly Rae Jepsen · 2012 · Duet</p><div class="lyrics">Hmm,mm
 Woah-oh-oh-oh
 It&#x27;s always a good time
 Woah-oh-oh-oh
@@ -2944,7 +2944,7 @@ Woah-oh-oh-oh
 It&#x27;s always a good time
 Woah-oh-oh-oh Woah-oh-oh-oh
 We don&#x27;t even have to try, it&#x27;s always a good time.</div></section>
-<section class="song" id="song-44"><a class="back" href="#">← 一覧へ戻る</a><h2>Gotta Pull Myself Together</h2><p class="meta">The Nolans ・ 1980</p><div class="lyrics">Now that I know, why did I doubt you,
+<section class="song" id="song-44"><a class="back" href="#">← Back to list</a><h2>Gotta Pull Myself Together</h2><p class="meta">The Nolans · 1980</p><div class="lyrics">Now that I know, why did I doubt you,
 I let you go, now I&#x27;m without you,
 Thought I was cool, Imagination,
 I was the fool, Fell to temptation
@@ -2972,7 +2972,7 @@ Baby, I need you.
 (*repeat)
 (**repeat)
 (**repeat)</div></section>
-<section class="song" id="song-45"><a class="back" href="#">← 一覧へ戻る</a><h2>Greatest Love of All</h2><p class="meta">Whitney Houston ・ 1986</p><div class="lyrics">I believe the children are our future 
+<section class="song" id="song-45"><a class="back" href="#">← Back to list</a><h2>Greatest Love of All</h2><p class="meta">Whitney Houston · 1986</p><div class="lyrics">I believe the children are our future 
 Teach them well and let them lead the way 
 Show them all the beauty they possess inside 
 Give them a sense of pride to make it easier
@@ -3024,7 +3024,7 @@ And if by chance, that special place
 That you&#x27;ve been dreaming of 
 Leads you to a lonely place 
 Find your strength in love</div></section>
-<section class="song" id="song-46"><a class="back" href="#">← 一覧へ戻る</a><h2>Havana</h2><p class="meta">Camila Cabello, Young Thug ・ 2017 ・ デュエット</p><div class="lyrics">[Camila Cabello:]
+<section class="song" id="song-46"><a class="back" href="#">← Back to list</a><h2>Havana</h2><p class="meta">Camila Cabello, Young Thug · 2017 · Duet</p><div class="lyrics">[Camila Cabello:]
  Havana, ooh na-na (ay)
  Half of my heart is in Havana, ooh-na-na (ay, ay)
  He took me back to East Atlanta, na-na-na
@@ -3102,7 +3102,7 @@ Find your strength in love</div></section>
  No, no, no, take me back
  Oh na-na-na
  Havana, ooh na-na</div></section>
-<section class="song" id="song-47"><a class="back" href="#">← 一覧へ戻る</a><h2>Havana (Remix)</h2><p class="meta">Camila Cabello, Daddy Yankee ・ 2017 ・ デュエット</p><div class="lyrics">[Pharrell Williams:]
+<section class="song" id="song-47"><a class="back" href="#">← Back to list</a><h2>Havana (Remix)</h2><p class="meta">Camila Cabello, Daddy Yankee · 2017 · Duet</p><div class="lyrics">[Pharrell Williams:]
  Hey
 
 [Camila Cabello (Pharrell Williams):]
@@ -3186,7 +3186,7 @@ Find your strength in love</div></section>
  Oh, but my heart is in Havana
  My heart is in Havana (ayy)
  Havana, ooh na-na</div></section>
-<section class="song" id="song-48"><a class="back" href="#">← 一覧へ戻る</a><h2>Havana (No Rap)</h2><p class="meta">Camila Cabello ・ 2017</p><div class="lyrics">Havana, ooh na-na (ay)
+<section class="song" id="song-48"><a class="back" href="#">← Back to list</a><h2>Havana (No Rap)</h2><p class="meta">Camila Cabello · 2017</p><div class="lyrics">Havana, ooh na-na (ay)
  Half of my heart is in Havana, ooh-na-na (ay, ay)
  He took me back to East Atlanta, na-na-na
  Oh, but my heart is in Havana (ay)
@@ -3253,8 +3253,8 @@ Find your strength in love</div></section>
  Oh, but my heart is in Havana
  My heart is in Havana (ay)
  Havana, ooh na-na</div></section>
-<section class="song" id="song-49"><a class="back" href="#">← 一覧へ戻る</a><h2>Have You Never Been Mellow</h2><p class="meta">Olivia Newton-John ・ 1975</p><div class="lyrics"></div></section>
-<section class="song" id="song-50"><a class="back" href="#">← 一覧へ戻る</a><h2>Hello</h2><p class="meta">Lionel Richie ・ 1984</p><div class="lyrics">I&#x27;ve been alone with you
+<section class="song" id="song-49"><a class="back" href="#">← Back to list</a><h2>Have You Never Been Mellow</h2><p class="meta">Olivia Newton-John · 1975</p><div class="lyrics"></div></section>
+<section class="song" id="song-50"><a class="back" href="#">← Back to list</a><h2>Hello</h2><p class="meta">Lionel Richie · 1984</p><div class="lyrics">I&#x27;ve been alone with you
 Inside my mind
 And in my dreams I&#x27;ve kissed your lips
 A thousand times
@@ -3294,7 +3294,7 @@ Or is someone loving you?
 Tell me how to win your heart
 For I haven&#x27;t got a clue
 But let me start by saying I love you</div></section>
-<section class="song" id="song-51"><a class="back" href="#">← 一覧へ戻る</a><h2>Holiday</h2><p class="meta">Madonna ・ 1983</p><div class="lyrics">Holiday, Celebrate, Holiday, Celebrate
+<section class="song" id="song-51"><a class="back" href="#">← Back to list</a><h2>Holiday</h2><p class="meta">Madonna · 1983</p><div class="lyrics">Holiday, Celebrate, Holiday, Celebrate
 
 If we took a holiday
 Took some time to celebrate
@@ -3368,8 +3368,8 @@ Holiday, (holiday, celebration) Celebrate
 Come together in every nation
 Holiday, (holiday, celebration) Celebrate
 Come together in every nation</div></section>
-<section class="song" id="song-52"><a class="back" href="#">← 一覧へ戻る</a><h2>Hotel California</h2><p class="meta">Eagles ・ 1977</p><div class="lyrics"></div></section>
-<section class="song" id="song-53"><a class="back" href="#">← 一覧へ戻る</a><h2>Hotel Room Service</h2><p class="meta">Pitbull ・ 2009</p><div class="lyrics">DJ I want everybody to stop what they&#x27;re doing.
+<section class="song" id="song-52"><a class="back" href="#">← Back to list</a><h2>Hotel California</h2><p class="meta">Eagles · 1977</p><div class="lyrics"></div></section>
+<section class="song" id="song-53"><a class="back" href="#">← Back to list</a><h2>Hotel Room Service</h2><p class="meta">Pitbull · 2009</p><div class="lyrics">DJ I want everybody to stop what they&#x27;re doing.
 Now if you know you&#x27;re with somebody you&#x27;re gonna take the hotel room tonight,
 Make some noise
 
@@ -3413,7 +3413,7 @@ Then we gon&#x27; go three and three, you gon&#x27; undress me.
 Then we gonna go four and four, we gon&#x27; freak some more! But first
 
 [Chorus]</div></section>
-<section class="song" id="song-54"><a class="back" href="#">← 一覧へ戻る</a><h2>How Far I&#x27;ll Go</h2><p class="meta">Alessia Cara ・ 2016</p><div class="lyrics">I&#x27;ve been staring at the edge of the water
+<section class="song" id="song-54"><a class="back" href="#">← Back to list</a><h2>How Far I&#x27;ll Go</h2><p class="meta">Alessia Cara · 2016</p><div class="lyrics">I&#x27;ve been staring at the edge of the water
 &#x27;Long as I can remember, never really knowing why
 I wish I could be the perfect daughter
 But I come back to the water, no matter how hard I try
@@ -3450,7 +3450,7 @@ See the line where the sky meets the sea? It calls me
 And no one knows, how far it goes
 If the wind in my sail on the sea stays behind me
 One day I&#x27;ll know, how far I&#x27;ll go</div></section>
-<section class="song" id="song-55"><a class="back" href="#">← 一覧へ戻る</a><h2>How Far I&#x27;ll Go</h2><p class="meta">Auli&#x27;i Cravalho ・ 2016</p><div class="lyrics">I&#x27;ve been staring at the edge of the water
+<section class="song" id="song-55"><a class="back" href="#">← Back to list</a><h2>How Far I&#x27;ll Go</h2><p class="meta">Auli&#x27;i Cravalho · 2016</p><div class="lyrics">I&#x27;ve been staring at the edge of the water
 &#x27;Long as I can remember, never really knowing why
 I wish I could be the perfect daughter
 But I come back to the water, no matter how hard I try
@@ -3476,7 +3476,7 @@ See the light as it shines on the sea? It&#x27;s blinding
 But no one knows, how deep it goes
 And it seems like it&#x27;s calling out to me, so come find me
 And let me know, what&#x27;s beyond that line, will I cross that line?</div></section>
-<section class="song" id="song-56"><a class="back" href="#">← 一覧へ戻る</a><h2>How Far I&#x27;ll Go</h2><p class="meta">Auli&#x27;i Cravalho ・ 2016</p><div class="lyrics">[Verse 1]
+<section class="song" id="song-56"><a class="back" href="#">← Back to list</a><h2>How Far I&#x27;ll Go</h2><p class="meta">Auli&#x27;i Cravalho · 2016</p><div class="lyrics">[Verse 1]
 I&#x27;ve been staring at the edge of the water
 Long as I can remember, never really knowing why
 I wish I could be the perfect daughter
@@ -3521,7 +3521,7 @@ And no one knows, how far it goes
 If the wind in my sail on the sea stays behind me
 One day I&#x27;ll know
 How far I&#x27;ll go</div></section>
-<section class="song" id="song-57"><a class="back" href="#">← 一覧へ戻る</a><h2>I Honestly Love You</h2><p class="meta">Olivia Newton-John ・ 1974</p><div class="lyrics">Maybe I hang around here
+<section class="song" id="song-57"><a class="back" href="#">← Back to list</a><h2>I Honestly Love You</h2><p class="meta">Olivia Newton-John · 1974</p><div class="lyrics">Maybe I hang around here
 A little more than I should
 We both know I got somewhere else to go
 But I got something to tell you
@@ -3560,7 +3560,7 @@ So I guess we&#x27;ll just be leaving it at this
 I love you
 I honestly love you
 I honestly love you</div></section>
-<section class="song" id="song-58"><a class="back" href="#">← 一覧へ戻る</a><h2>I Just Called to Say I Love You</h2><p class="meta">Stevie Wonder ・ 1984</p><div class="lyrics">No New Year&#x27;s Day to celebrate
+<section class="song" id="song-58"><a class="back" href="#">← Back to list</a><h2>I Just Called to Say I Love You</h2><p class="meta">Stevie Wonder · 1984</p><div class="lyrics">No New Year&#x27;s Day to celebrate
 No chocolate covered candy hearts to give away
 No first of spring
 No song to sing
@@ -3600,7 +3600,7 @@ I just called to say how much I care, I do
 I just called to say I love you
 And I mean it from the bottom of my heart, of my heart,
 of my heart</div></section>
-<section class="song" id="song-59"><a class="back" href="#">← 一覧へ戻る</a><h2>I Like It Like That</h2><p class="meta">Hot Chelle Rae, New Boyz ・ 2011 ・ デュエット</p><div class="lyrics">Let’s get it on, yeah, y’all can come along
+<section class="song" id="song-59"><a class="back" href="#">← Back to list</a><h2>I Like It Like That</h2><p class="meta">Hot Chelle Rae, New Boyz · 2011 · Duet</p><div class="lyrics">Let’s get it on, yeah, y’all can come along
 Everybody drinks on me, bought out the bar
 Just to feel like I’m a star, now I’m thanking the academy
 Missed my ride home, lost my iPhone
@@ -3686,7 +3686,7 @@ Oh oh oh oh like that...
 
 Everybody, sing it right back
 I like it like that</div></section>
-<section class="song" id="song-60"><a class="back" href="#">← 一覧へ戻る</a><h2>I&#x27;ll Never Go</h2><p class="meta">Nexxus ・ 1994</p><div class="lyrics">You always ask me
+<section class="song" id="song-60"><a class="back" href="#">← Back to list</a><h2>I&#x27;ll Never Go</h2><p class="meta">Nexxus · 1994</p><div class="lyrics">You always ask me
 Those words I say
 And telling me what it means to me
 
@@ -3747,7 +3747,7 @@ I&#x27;ll never go far away from you
 
 I&#x27;ll never go  [never go away]
 I&#x27;ll never go away  [never go]...</div></section>
-<section class="song" id="song-61"><a class="back" href="#">← 一覧へ戻る</a><h2>I&#x27;m in the Mood for Dancing</h2><p class="meta">The Nolans ・ 1979</p><div class="lyrics">I&#x27;m in the mood for dancing, romancin&#x27;
+<section class="song" id="song-61"><a class="back" href="#">← Back to list</a><h2>I&#x27;m in the Mood for Dancing</h2><p class="meta">The Nolans · 1979</p><div class="lyrics">I&#x27;m in the mood for dancing, romancin&#x27;
 Ooh, I&#x27;m givin&#x27; it all tonight,
 I&#x27;m in the mood for chancin&#x27;, I feel like dancin&#x27;
 Ooh so come on and hold me tight.
@@ -3790,7 +3790,7 @@ Get on your feet now baby dance,
 Yeah, lets dance, come on and dance,
 can&#x27;t you hear the music baby dance,
 Yeah, lets dance, come on and dance...</div></section>
-<section class="song" id="song-62"><a class="back" href="#">← 一覧へ戻る</a><h2>I&#x27;m the One</h2><p class="meta">DJ Khaled, Justin Bieber, Quavo, Chance the Rapper, Lil Wayne ・ 2017 ・ デュエット</p><div class="lyrics">[DJ Khaled:]
+<section class="song" id="song-62"><a class="back" href="#">← Back to list</a><h2>I&#x27;m the One</h2><p class="meta">DJ Khaled, Justin Bieber, Quavo, Chance the Rapper, Lil Wayne · 2017 · Duet</p><div class="lyrics">[DJ Khaled:]
 We The Best Music
 Another One!
 DJ Khaled
@@ -3919,7 +3919,7 @@ Don&#x27;t you know, girl, don&#x27;t you know, girl
 I am the one for you (I&#x27;m the one), yeah, I&#x27;m the one
 Don&#x27;t you know, girl, don&#x27;t you know, girl
 I am the one for you (I&#x27;m the one), yeah, I&#x27;m the one</div></section>
-<section class="song" id="song-63"><a class="back" href="#">← 一覧へ戻る</a><h2>I Really Like You</h2><p class="meta">Carly Rae Jepsen ・ 2015</p><div class="lyrics">I really wanna stop
+<section class="song" id="song-63"><a class="back" href="#">← Back to list</a><h2>I Really Like You</h2><p class="meta">Carly Rae Jepsen · 2015</p><div class="lyrics">I really wanna stop
 But I just got the taste for it
 I feel like I could fly with the boy on the moon
 So honey hold my hand, you like making me wait for it
@@ -3986,7 +3986,7 @@ And I want you. Do you want me? Do you want me too?
 And I want you. Do you want me? Do you want me too? (Yeah, I need to tell you something)
 I really really really really really really like you (Oh, yeah!)
 And I want you. Do you want me? Do you want me too?</div></section>
-<section class="song" id="song-64"><a class="back" href="#">← 一覧へ戻る</a><h2>It&#x27;s a Game</h2><p class="meta">Bay City Rollers ・ 1977</p><div class="lyrics">The clown came down to meet me
+<section class="song" id="song-64"><a class="back" href="#">← Back to list</a><h2>It&#x27;s a Game</h2><p class="meta">Bay City Rollers · 1977</p><div class="lyrics">The clown came down to meet me
 With a smile upon his face,
 He fired the starting pistol and
 Began the human race
@@ -4015,7 +4015,7 @@ It&#x27;s a game a game, a game that we&#x27;re playing
 But I don&#x27;t mind but I don&#x27;t make the rules
 It&#x27;s a game, a game, a game that we&#x27;re playing
 Just a game for lovers and fools</div></section>
-<section class="song" id="song-65"><a class="back" href="#">← 一覧へ戻る</a><h2>I&#x27;ve Never Been to Me</h2><p class="meta">Charlene ・ 1982</p><div class="lyrics">Hey lady, you, lady, cursin&#x27; at your life
+<section class="song" id="song-65"><a class="back" href="#">← Back to list</a><h2>I&#x27;ve Never Been to Me</h2><p class="meta">Charlene · 1982</p><div class="lyrics">Hey lady, you, lady, cursin&#x27; at your life
 You&#x27;re a discontented mother and a regimented wife
 I&#x27;ve no doubt you dream about the things you never do
 But I wish someone had a talk to me like I wanna talk to you
@@ -4059,7 +4059,7 @@ While I sipped champagne on a yacht)
 I&#x27;ve been to paradise - never been to me
 (I&#x27;ve been to cryin&#x27; for unborn children )
 (Fade)</div></section>
-<section class="song" id="song-66"><a class="back" href="#">← 一覧へ戻る</a><h2>It Will Rain</h2><p class="meta">Bruno Mars ・ 2011</p><div class="lyrics">If you ever leave me baby,
+<section class="song" id="song-66"><a class="back" href="#">← Back to list</a><h2>It Will Rain</h2><p class="meta">Bruno Mars · 2011</p><div class="lyrics">If you ever leave me baby,
 Leave some morphine at my door
 &#x27;Cause it would take a whole lot of medication
 To realize what we used to have,
@@ -4111,7 +4111,7 @@ If I lose you, baby
 Just like the clouds
 My eyes will do the same, if you walk away
 Everyday it will rain</div></section>
-<section class="song" id="song-67"><a class="back" href="#">← 一覧へ戻る</a><h2>I Want You to Know</h2><p class="meta">Zedd, Selena Gomez ・ 2015</p><div class="lyrics">I want you to know that it&#x27;s our time
+<section class="song" id="song-67"><a class="back" href="#">← Back to list</a><h2>I Want You to Know</h2><p class="meta">Zedd, Selena Gomez · 2015</p><div class="lyrics">I want you to know that it&#x27;s our time
 You and me bleed the same light
 I want you to know that I&#x27;m all yours
 You and me run the same course
@@ -4163,7 +4163,7 @@ I want you to know that it&#x27;s our time
 You and me bleed the same light
 I want you to know that I&#x27;m all yours
 You and me run the same course</div></section>
-<section class="song" id="song-68"><a class="back" href="#">← 一覧へ戻る</a><h2>Jealous Guy</h2><p class="meta">John Lennon ・ 1971</p><div class="lyrics">I was dreaming of the past
+<section class="song" id="song-68"><a class="back" href="#">← Back to list</a><h2>Jealous Guy</h2><p class="meta">John Lennon · 1971</p><div class="lyrics">I was dreaming of the past
 And my heart was beating fast
 I began to lose control
 I began to lose control
@@ -4198,7 +4198,7 @@ Oh no, I didn&#x27;t want to hurt you
 I&#x27;m just a jealous guy, watch out
 I&#x27;m just a jealous guy, look out babe
 I&#x27;m just a jealous guy</div></section>
-<section class="song" id="song-69"><a class="back" href="#">← 一覧へ戻る</a><h2>Joanna</h2><p class="meta">Kool &amp; the Gang ・ 1983</p><div class="lyrics">Joanna, I love you
+<section class="song" id="song-69"><a class="back" href="#">← Back to list</a><h2>Joanna</h2><p class="meta">Kool &amp; the Gang · 1983</p><div class="lyrics">Joanna, I love you
 You&#x27;re the one, the one for me
 
 I&#x27;m in love, and I won&#x27;t lie
@@ -4246,7 +4246,7 @@ You&#x27;re the one, the one for me
 Joanna, yes I love you, I love you
 You&#x27;re the one, the one for me
 Believe me babe</div></section>
-<section class="song" id="song-70"><a class="back" href="#">← 一覧へ戻る</a><h2>Just Give Me a Reason</h2><p class="meta">P!nk, Nate Ruess ・ 2013 ・ デュエット</p><div class="lyrics">Right from the start
+<section class="song" id="song-70"><a class="back" href="#">← Back to list</a><h2>Just Give Me a Reason</h2><p class="meta">P!nk, Nate Ruess · 2013 · Duet</p><div class="lyrics">Right from the start
 You were a thief
 You stole my heart
 And I your willing victim
@@ -4343,7 +4343,7 @@ Oh, we can learn to love again
 Oh, oh
 that we&#x27;re not broken just bent
 And we can learn to love again</div></section>
-<section class="song" id="song-71"><a class="back" href="#">← 一覧へ戻る</a><h2>Just the Way You Are</h2><p class="meta">Bruno Mars ・ 2010</p><div class="lyrics">Ohhhhh ohhhhhh ohhhhhh ohhhhhhh
+<section class="song" id="song-71"><a class="back" href="#">← Back to list</a><h2>Just the Way You Are</h2><p class="meta">Bruno Mars · 2010</p><div class="lyrics">Ohhhhh ohhhhhh ohhhhhh ohhhhhhh
 
 [Verse 1:]
 Oh, her eyes, her eyes
@@ -4413,8 +4413,8 @@ The whole world stops and stares for a while
 Just the way you are
 
 Yeah</div></section>
-<section class="song" id="song-72"><a class="back" href="#">← 一覧へ戻る</a><h2>Killing Me Softly with His Song</h2><p class="meta">Roberta Flack ・ 1973</p><div class="lyrics"></div></section>
-<section class="song" id="song-73"><a class="back" href="#">← 一覧へ戻る</a><h2>La Isla Bonita</h2><p class="meta">Madonna ・ 1987</p><div class="lyrics">[Spoken:]
+<section class="song" id="song-72"><a class="back" href="#">← Back to list</a><h2>Killing Me Softly with His Song</h2><p class="meta">Roberta Flack · 1973</p><div class="lyrics"></div></section>
+<section class="song" id="song-73"><a class="back" href="#">← Back to list</a><h2>La Isla Bonita</h2><p class="meta">Madonna · 1987</p><div class="lyrics">[Spoken:]
 Como puede ser verdad  &lt; How could it be true?&gt;
 [or Como puede ese olvidar]
 
@@ -4456,7 +4456,7 @@ La la la la la la la
 Te dijo te amo  &lt; He told you, &quot;I love you&quot;&gt;
 La la la la la la la
 El dijo que te ama  &lt; He said he loves you &gt;</div></section>
-<section class="song" id="song-74"><a class="back" href="#">← 一覧へ戻る</a><h2>Lambada</h2><p class="meta">Kaoma ・ 1989</p><div class="lyrics">[Refrão]
+<section class="song" id="song-74"><a class="back" href="#">← Back to list</a><h2>Lambada</h2><p class="meta">Kaoma · 1989</p><div class="lyrics">[Refrão]
 Chorando se foi quem um dia só me fez chorar
 Chorando se foi quem um dia só me fez chorar
 
@@ -4489,7 +4489,7 @@ Ai, ai, ai
 Dançando Lambada!
 
 Losenta lambada</div></section>
-<section class="song" id="song-75"><a class="back" href="#">← 一覧へ戻る</a><h2>Last Christmas</h2><p class="meta">Wham! ・ 1984</p><div class="lyrics">*Last Christmas, I gave you my heart 
+<section class="song" id="song-75"><a class="back" href="#">← Back to list</a><h2>Last Christmas</h2><p class="meta">Wham! · 1984</p><div class="lyrics">*Last Christmas, I gave you my heart 
 But the very next day, You gave it away 
 This year, to save me from tears 
 I&#x27;ll give it to someone special 
@@ -4552,7 +4552,7 @@ I&#x27;ll give it to someone, I&#x27;ll give it to someone
 last christmas I gave you my heart 
 you gave it away 
 I&#x27;ll give it to someone, I&#x27;ll give it to someone</div></section>
-<section class="song" id="song-76"><a class="back" href="#">← 一覧へ戻る</a><h2>Let It Go</h2><p class="meta">Idina Menzel ・ 2013</p><div class="lyrics">The snow glows white on the mountain tonight
+<section class="song" id="song-76"><a class="back" href="#">← Back to list</a><h2>Let It Go</h2><p class="meta">Idina Menzel · 2013</p><div class="lyrics">The snow glows white on the mountain tonight
 Not a footprint to be seen
 A kingdom of isolation, and it looks like I&#x27;m the Queen
 The wind is howling like this swirling storm inside
@@ -4601,7 +4601,7 @@ That perfect girl is gone
 Here I stand in the light of day
 Let the storm rage on
 The cold never bothered me anyway</div></section>
-<section class="song" id="song-77"><a class="back" href="#">← 一覧へ戻る</a><h2>Like I&#x27;m Gonna Lose You</h2><p class="meta">Meghan Trainor, John Legend ・ 2015 ・ デュエット</p><div class="lyrics">I found myself dreaming
+<section class="song" id="song-77"><a class="back" href="#">← Back to list</a><h2>Like I&#x27;m Gonna Lose You</h2><p class="meta">Meghan Trainor, John Legend · 2015 · Duet</p><div class="lyrics">I found myself dreaming
 In silver and gold
 Like a scene from a movie
 That every broken heart knows we were walking on moonlight
@@ -4660,7 +4660,7 @@ I won&#x27;t take you for granted &#x27;cause we&#x27;ll never know when
 When we&#x27;ll run out of time so I&#x27;m gonna love you
 Like I&#x27;m gonna lose you
 I&#x27;m gonna love you like I&#x27;m gonna lose you</div></section>
-<section class="song" id="song-78"><a class="back" href="#">← 一覧へ戻る</a><h2>Livin&#x27; la Vida Loca</h2><p class="meta">Ricky Martin ・ 1999</p><div class="lyrics">She&#x27;s into superstitions black cats and voodoo dolls. 
+<section class="song" id="song-78"><a class="back" href="#">← Back to list</a><h2>Livin&#x27; la Vida Loca</h2><p class="meta">Ricky Martin · 1999</p><div class="lyrics">She&#x27;s into superstitions black cats and voodoo dolls. 
 I feel a premonition that girl&#x27;s gonna make me fall. 
 She&#x27;s into new sensations new kicks in the candle light. 
 She&#x27;s got a new addiction for every day and night. 
@@ -4691,7 +4691,7 @@ She&#x27;ll make you live her crazy life
 but she&#x27;ll take away your pain like a bullet to your brain. Come On!
 
 [CHORUS]</div></section>
-<section class="song" id="song-79"><a class="back" href="#">← 一覧へ戻る</a><h2>Livin&#x27; la Vida Loca (Spanish Version)</h2><p class="meta">Ricky Martin ・ 1999</p><div class="lyrics">La reina de la noche
+<section class="song" id="song-79"><a class="back" href="#">← Back to list</a><h2>Livin&#x27; la Vida Loca (Spanish Version)</h2><p class="meta">Ricky Martin · 1999</p><div class="lyrics">La reina de la noche
 La diosa del vudú
 Yo no podré salvarme
 Podrás salvarte tú?
@@ -4731,7 +4731,7 @@ Tú cierras los ojitos y te dejas arrastrar
 Tú te dejas arrastrar
 
 [CORO]</div></section>
-<section class="song" id="song-80"><a class="back" href="#">← 一覧へ戻る</a><h2>Look What You Made Me Do</h2><p class="meta">Taylor Swift ・ 2017</p><div class="lyrics">I don&#x27;t like your little games
+<section class="song" id="song-80"><a class="back" href="#">← Back to list</a><h2>Look What You Made Me Do</h2><p class="meta">Taylor Swift · 2017</p><div class="lyrics">I don&#x27;t like your little games
 Don&#x27;t like your tilted stage
 The role you made me play
 Of the fool, no, I don&#x27;t like you
@@ -4809,8 +4809,8 @@ Ooh, look what you made me do
 Look what you made me do
 Look what you just made me do
 Look what you just made me do</div></section>
-<section class="song" id="song-81"><a class="back" href="#">← 一覧へ戻る</a><h2>Love Is Blind</h2><p class="meta">Janis Ian ・ 1976</p><div class="lyrics"></div></section>
-<section class="song" id="song-82"><a class="back" href="#">← 一覧へ戻る</a><h2>Love Me Like You Do</h2><p class="meta">Ellie Goulding ・ 2015</p><div class="lyrics">You&#x27;re the light, you&#x27;re the night
+<section class="song" id="song-81"><a class="back" href="#">← Back to list</a><h2>Love Is Blind</h2><p class="meta">Janis Ian · 1976</p><div class="lyrics"></div></section>
+<section class="song" id="song-82"><a class="back" href="#">← Back to list</a><h2>Love Me Like You Do</h2><p class="meta">Ellie Goulding · 2015</p><div class="lyrics">You&#x27;re the light, you&#x27;re the night
 You&#x27;re the color of my blood
 You&#x27;re the cure, you&#x27;re the pain
 You&#x27;re the only thing I wanna touch
@@ -4850,7 +4850,7 @@ Love me like you do, love me like you do
 Love me like you do, love me like you do
 Touch me like you do, touch me like you do
 What are you waiting for?</div></section>
-<section class="song" id="song-83"><a class="back" href="#">← 一覧へ戻る</a><h2>Love Yourself</h2><p class="meta">Justin Bieber ・ 2015</p><div class="lyrics">For all the times that you rain on my parade
+<section class="song" id="song-83"><a class="back" href="#">← Back to list</a><h2>Love Yourself</h2><p class="meta">Justin Bieber · 2015</p><div class="lyrics">For all the times that you rain on my parade
 And all the clubs you get in using my name
 You think you broke my heart, oh girl for goodness sake
 You think I&#x27;m crying, oh my oh, well I ain&#x27;t
@@ -4901,7 +4901,7 @@ You should go and love yourself
 Oh baby you should go and love yourself
 And if you think that I&#x27;m still holdin&#x27; on to somethin&#x27;
 You should go and love yourself</div></section>
-<section class="song" id="song-84"><a class="back" href="#">← 一覧へ戻る</a><h2>Macarena (Bayside Boys Mix)</h2><p class="meta">Los del Río ・ 1995 ・ デュエット</p><div class="lyrics">I&#x27;m not trying to seduce you
+<section class="song" id="song-84"><a class="back" href="#">← Back to list</a><h2>Macarena (Bayside Boys Mix)</h2><p class="meta">Los del Río · 1995 · Duet</p><div class="lyrics">I&#x27;m not trying to seduce you
 
 When I dance they call me Macarena
 and the boys they say que soy buena
@@ -4963,7 +4963,7 @@ Dale a tu cuerpo alegria Macarena
 Que tu cuerpo es pa&#x27; darle alegria cosa buena
 Dale a tu cuerpo alegria, Macarena
 Hey Macarena</div></section>
-<section class="song" id="song-85"><a class="back" href="#">← 一覧へ戻る</a><h2>Making Love Out of Nothing at All</h2><p class="meta">Air Supply ・ 1983</p><div class="lyrics">I know just how to whisper
+<section class="song" id="song-85"><a class="back" href="#">← Back to list</a><h2>Making Love Out of Nothing at All</h2><p class="meta">Air Supply · 1983</p><div class="lyrics">I know just how to whisper
 And I know just how to cry
 I know just where to find the answers
 And I know just how to lie
@@ -5069,7 +5069,7 @@ Out of nothing at all
 (Making love) 
 (Making love) 
 (Making love, love, love)</div></section>
-<section class="song" id="song-86"><a class="back" href="#">← 一覧へ戻る</a><h2>Marry You</h2><p class="meta">Bruno Mars ・ 2011</p><div class="lyrics">It&#x27;s a beautiful night,
+<section class="song" id="song-86"><a class="back" href="#">← Back to list</a><h2>Marry You</h2><p class="meta">Bruno Mars · 2011</p><div class="lyrics">It&#x27;s a beautiful night,
 We&#x27;re looking for something dumb to do.
 Hey baby,
 I think I wanna marry you.
@@ -5138,7 +5138,7 @@ Is it the look in your eyes,
 Or is it this dancing juice?
 Who cares baby,
 I think I wanna marry you.</div></section>
-<section class="song" id="song-87"><a class="back" href="#">← 一覧へ戻る</a><h2>Marvin Gaye</h2><p class="meta">Charlie Puth, Meghan Trainor ・ 2015 ・ デュエット</p><div class="lyrics">Let&#x27;s Marvin Gaye and get it on
+<section class="song" id="song-87"><a class="back" href="#">← Back to list</a><h2>Marvin Gaye</h2><p class="meta">Charlie Puth, Meghan Trainor · 2015 · Duet</p><div class="lyrics">Let&#x27;s Marvin Gaye and get it on
  You got the healing that I want
  Just like they say it in the song
  Until the dawn, let&#x27;s Marvin Gaye and get it on
@@ -5198,7 +5198,7 @@ I think I wanna marry you.</div></section>
  Just like they say it in a song
  Until the dawn, let&#x27;s Marvin Gaye and get it on
  Ooh</div></section>
-<section class="song" id="song-88"><a class="back" href="#">← 一覧へ戻る</a><h2>Mistletoe</h2><p class="meta">Justin Bieber ・ 2011</p><div class="lyrics">It&#x27;s the most beautiful time of the year,
+<section class="song" id="song-88"><a class="back" href="#">← Back to list</a><h2>Mistletoe</h2><p class="meta">Justin Bieber · 2011</p><div class="lyrics">It&#x27;s the most beautiful time of the year,
 Lights fill the streets spreading so much cheer,
 I should be playing in the winter snow,
 But I&#x27;mma be under the mistletoe.
@@ -5266,7 +5266,7 @@ Show me baby that you love me so,
 Oh, oh, oh, oh, oh, oh.
 
 yeahhhhhhh.</div></section>
-<section class="song" id="song-89"><a class="back" href="#">← 一覧へ戻る</a><h2>Modern Girl</h2><p class="meta">Sheena Easton ・ 1980</p><div class="lyrics">He wakes and says, &quot;hello&quot;, turns on the breakfast show
+<section class="song" id="song-89"><a class="back" href="#">← Back to list</a><h2>Modern Girl</h2><p class="meta">Sheena Easton · 1980</p><div class="lyrics">He wakes and says, &quot;hello&quot;, turns on the breakfast show
 She fixes coffee while he takes a shower
 &quot;Hey, that was great&quot;, he said, &quot;I wish we could stay in bed&quot;
 &quot;But I got to be at work in less than an hour&quot;
@@ -5313,7 +5313,7 @@ She&#x27;s a modern girl
 Na-na-na-na-na, na-na-na-na-na, na-na-na-na-na
 She&#x27;s a modern girl
 Na-na-na-na-na, na-na-na-na-na, na-na-na-na-na</div></section>
-<section class="song" id="song-90"><a class="back" href="#">← 一覧へ戻る</a><h2>Moves Like Jagger</h2><p class="meta">Maroon 5, Christina Aguilera ・ 2011 ・ デュエット</p><div class="lyrics">[Adam Levine:]
+<section class="song" id="song-90"><a class="back" href="#">← Back to list</a><h2>Moves Like Jagger</h2><p class="meta">Maroon 5, Christina Aguilera · 2011 · Duet</p><div class="lyrics">[Adam Levine:]
 Oh...
 Oh!
 
@@ -5414,7 +5414,7 @@ Look into my eyes and I&#x27;ll own you
 With them moves like Jagger
 I&#x27;ve got the moves like Jagger
 I&#x27;ve got the moves like Jagger</div></section>
-<section class="song" id="song-91"><a class="back" href="#">← 一覧へ戻る</a><h2>Morning Train (Nine to Five)</h2><p class="meta">Sheena Easton ・ 1980</p><div class="lyrics">I wake up every mornin&#x27;
+<section class="song" id="song-91"><a class="back" href="#">← Back to list</a><h2>Morning Train (Nine to Five)</h2><p class="meta">Sheena Easton · 1980</p><div class="lyrics">I wake up every mornin&#x27;
 I stumble out of bed
 Stretchin&#x27; and yawnin&#x27;
 Another day ahead
@@ -5485,7 +5485,7 @@ He works so hard
 (He takes another home again)
 To find me waiting for him
 (My baby takes the morning train)</div></section>
-<section class="song" id="song-92"><a class="back" href="#">← 一覧へ戻る</a><h2>Need You Now</h2><p class="meta">Lady Antebellum ・ 2009 ・ デュエット</p><div class="lyrics">Picture perfect memories scattered all around the floor.
+<section class="song" id="song-92"><a class="back" href="#">← Back to list</a><h2>Need You Now</h2><p class="meta">Lady Antebellum · 2009 · Duet</p><div class="lyrics">Picture perfect memories scattered all around the floor.
 Reaching for the phone &#x27;cuz I can&#x27;t fight it anymore.
 And I wonder if I ever cross your mind?
 For me it happens all the time.
@@ -5514,8 +5514,8 @@ Well I don&#x27;t know how I can do without.
 I just need you now
 I just need you now.
 Oh baby I need you now.</div></section>
-<section class="song" id="song-93"><a class="back" href="#">← 一覧へ戻る</a><h2>New Kid in Town</h2><p class="meta">Eagles ・ 1976</p><div class="lyrics"></div></section>
-<section class="song" id="song-94"><a class="back" href="#">← 一覧へ戻る</a><h2>Never Be the Same</h2><p class="meta">Camila Cabello ・ 2017</p><div class="lyrics">Something must&#x27;ve gone wrong in my brain
+<section class="song" id="song-93"><a class="back" href="#">← Back to list</a><h2>New Kid in Town</h2><p class="meta">Eagles · 1976</p><div class="lyrics"></div></section>
+<section class="song" id="song-94"><a class="back" href="#">← Back to list</a><h2>Never Be the Same</h2><p class="meta">Camila Cabello · 2017</p><div class="lyrics">Something must&#x27;ve gone wrong in my brain
 Got your chemicals all in my veins
 Feeling all the highs, feeling all the pain
 Let go on the wheel, it&#x27;s the bullet lane
@@ -5575,7 +5575,7 @@ And I&#x27;m a sucker for the way that you move, babe
 And I could try to run, but it would be useless
 You&#x27;re to blame
 Just one hit of you, I knew I&#x27;ll never ever, ever be the same</div></section>
-<section class="song" id="song-95"><a class="back" href="#">← 一覧へ戻る</a><h2>Never Be the Same (Radio Edit)</h2><p class="meta">Camila Cabello ・ 2017</p><div class="lyrics">Something must&#x27;ve gone wrong in my brain
+<section class="song" id="song-95"><a class="back" href="#">← Back to list</a><h2>Never Be the Same (Radio Edit)</h2><p class="meta">Camila Cabello · 2017</p><div class="lyrics">Something must&#x27;ve gone wrong in my brain
 Got your chemicals all in my veins
 Feeling all the highs, feeling all the pain
 Let go of the ways I used to fall in lane
@@ -5637,7 +5637,7 @@ And I&#x27;m a sucker for the way that you move, babe
 And I could try to run, but it would be useless
 You&#x27;re to blame
 Just one hit, you will know I&#x27;ll never ever, ever be the same</div></section>
-<section class="song" id="song-96"><a class="back" href="#">← 一覧へ戻る</a><h2>One Call Away</h2><p class="meta">Charlie Puth ・ 2015</p><div class="lyrics">I&#x27;m only one call away
+<section class="song" id="song-96"><a class="back" href="#">← Back to list</a><h2>One Call Away</h2><p class="meta">Charlie Puth · 2015</p><div class="lyrics">I&#x27;m only one call away
 I&#x27;ll be there to save the day
 Superman got nothing on me
 I&#x27;m only one call away
@@ -5685,7 +5685,7 @@ Superman got nothing on me
 I&#x27;m only one call away
 
 I&#x27;m only one call away</div></section>
-<section class="song" id="song-97"><a class="back" href="#">← 一覧へ戻る</a><h2>One Day</h2><p class="meta">Matisyahu ・ 2008</p><div class="lyrics">Sometimes I lay
+<section class="song" id="song-97"><a class="back" href="#">← Back to list</a><h2>One Day</h2><p class="meta">Matisyahu · 2008</p><div class="lyrics">Sometimes I lay
 Under the moon
 And thank God I&#x27;m breathing
 Then I pray
@@ -5746,7 +5746,7 @@ That we don&#x27;t wanna fight no more
 There will be no more wars
 And our children will play
 One day [6x]</div></section>
-<section class="song" id="song-98"><a class="back" href="#">← 一覧へ戻る</a><h2>On the Floor</h2><p class="meta">Jennifer Lopez, Pitbull ・ 2011 ・ デュエット</p><div class="lyrics">J-Lo, The other side, out my mine
+<section class="song" id="song-98"><a class="back" href="#">← Back to list</a><h2>On the Floor</h2><p class="meta">Jennifer Lopez, Pitbull · 2011 · Duet</p><div class="lyrics">J-Lo, The other side, out my mine
 
 It&#x27;s a new generation (Mr. Worldwide) of party people
 
@@ -5823,7 +5823,7 @@ Say no more, get on the floor
 Tonight we gon&#x27; be it on the floor
 Tonight we gon&#x27; be it on the floor
 Tonight we gon&#x27; be it on the floor</div></section>
-<section class="song" id="song-99"><a class="back" href="#">← 一覧へ戻る</a><h2>On the Floor 2</h2><p class="meta">Jennifer Lopez, Pitbull ・ 2011 ・ デュエット</p><div class="lyrics">[Pitbull]
+<section class="song" id="song-99"><a class="back" href="#">← Back to list</a><h2>On the Floor 2</h2><p class="meta">Jennifer Lopez, Pitbull · 2011 · Duet</p><div class="lyrics">[Pitbull]
 Hey oh ay oh ay
 Let&#x27;s take the whole world on a ride
 J-LO! ya tu sabe no es mas nada
@@ -5917,7 +5917,7 @@ La la la la la la la la la la la la la la
 Tonight we gon&#x27; be it on the floor
 Tonight we gon&#x27; be it on the floor
 Tonight we gon&#x27; be it on the floor</div></section>
-<section class="song" id="song-100"><a class="back" href="#">← 一覧へ戻る</a><h2>One Time</h2><p class="meta">Justin Bieber ・ 2009</p><div class="lyrics">Me plus you, I&#x27;m a tell you one time
+<section class="song" id="song-100"><a class="back" href="#">← Back to list</a><h2>One Time</h2><p class="meta">Justin Bieber · 2009</p><div class="lyrics">Me plus you, I&#x27;m a tell you one time
 Me plus you, I&#x27;m a tell you one time
 Me plus you, I&#x27;m a tell you one time
 
@@ -5990,7 +5990,7 @@ Me plus you, I&#x27;m a tell you one time
 
 One time
 One time</div></section>
-<section class="song" id="song-101"><a class="back" href="#">← 一覧へ戻る</a><h2>Papa Don&#x27;t Preach</h2><p class="meta">Madonna ・ 1986</p><div class="lyrics">Papa I know you&#x27;re going to be upset
+<section class="song" id="song-101"><a class="back" href="#">← Back to list</a><h2>Papa Don&#x27;t Preach</h2><p class="meta">Madonna · 1986</p><div class="lyrics">Papa I know you&#x27;re going to be upset
 &#x27;Cause I was always your little girl
 But you should know by now
 I&#x27;m not a baby
@@ -6036,7 +6036,7 @@ Papa don&#x27;t preach, I&#x27;ve been losing sleep
 Oh, I&#x27;m gonna keep my baby, ooh
 Don&#x27;t you stop loving me daddy
 I know, I&#x27;m keeping my baby</div></section>
-<section class="song" id="song-102"><a class="back" href="#">← 一覧へ戻る</a><h2>Part-Time Lover</h2><p class="meta">Stevie Wonder ・ 1985</p><div class="lyrics">Call up, ring once, hang up the phone 
+<section class="song" id="song-102"><a class="back" href="#">← Back to list</a><h2>Part-Time Lover</h2><p class="meta">Stevie Wonder · 1985</p><div class="lyrics">Call up, ring once, hang up the phone 
 To let me know you made it home 
 Don&#x27;t want nothing to be wrong with part-time lover 
 
@@ -6077,7 +6077,7 @@ I guess that two can play the game
 Of part-time lovers 
 You and me, part-time lovers 
 But, she and he, part-time lovers</div></section>
-<section class="song" id="song-103"><a class="back" href="#">← 一覧へ戻る</a><h2>Perfect</h2><p class="meta">Ed Sheeran ・ 2017</p><div class="lyrics">I found a love for me
+<section class="song" id="song-103"><a class="back" href="#">← Back to list</a><h2>Perfect</h2><p class="meta">Ed Sheeran · 2017</p><div class="lyrics">I found a love for me
 Darling, just dive right in and follow my lead
 Well, I found a girl, beautiful and sweet
 Oh, I never knew you were the someone waiting for me
@@ -6128,7 +6128,7 @@ Now I know I have met an angel in person
 And she looks perfect
 I don&#x27;t deserve this
 You look perfect tonight</div></section>
-<section class="song" id="song-104"><a class="back" href="#">← 一覧へ戻る</a><h2>Please Be Careful with My Heart</h2><p class="meta">Jose Mari Chan, Regine Velasquez ・ 1989 ・ デュエット</p><div class="lyrics">If you love me like you tell me
+<section class="song" id="song-104"><a class="back" href="#">← Back to list</a><h2>Please Be Careful with My Heart</h2><p class="meta">Jose Mari Chan, Regine Velasquez · 1989 · Duet</p><div class="lyrics">If you love me like you tell me
 Please be careful with my heart
 You can take it, just don&#x27;t break it
 Or my world will fall apart
@@ -6177,7 +6177,7 @@ From the very start
 From the very start please be careful with...
 I&#x27;ll be careful with...
 (My/you&#x27;re) heart</div></section>
-<section class="song" id="song-105"><a class="back" href="#">← 一覧へ戻る</a><h2>Reunited</h2><p class="meta">Peaches &amp; Herb ・ 1979 ・ デュエット</p><div class="lyrics">[Herb]
+<section class="song" id="song-105"><a class="back" href="#">← Back to list</a><h2>Reunited</h2><p class="meta">Peaches &amp; Herb · 1979 · Duet</p><div class="lyrics">[Herb]
 I was a fool to ever leave your side
 Me minus you is such a lonely ride
 The breakup we had has made me lonesome and sad
@@ -6218,7 +6218,7 @@ And you&#x27;re exactly what I&#x27;m dreamin&#x27; of
 All through the day
 And all through the night
 Both: I&#x27;ll give you all the love I have with all my might, hey, hey</div></section>
-<section class="song" id="song-106"><a class="back" href="#">← 一覧へ戻る</a><h2>Right Here Waiting</h2><p class="meta">Richard Marx ・ 1989</p><div class="lyrics">Ocean&#x27;s apart day after day
+<section class="song" id="song-106"><a class="back" href="#">← Back to list</a><h2>Right Here Waiting</h2><p class="meta">Richard Marx · 1989</p><div class="lyrics">Ocean&#x27;s apart day after day
 And I slowly go insane
 I hear your voice on the line
 But it doesn&#x27;t stop the pain
@@ -6253,7 +6253,7 @@ Oh, can&#x27;t you see it baby
 You&#x27;ve got me going crazy
 
 [Chorus]</div></section>
-<section class="song" id="song-107"><a class="back" href="#">← 一覧へ戻る</a><h2>Rockabye</h2><p class="meta">Clean Bandit, Sean Paul, Anne-Marie ・ 2016 ・ デュエット</p><div class="lyrics">[Sean Paul:]
+<section class="song" id="song-107"><a class="back" href="#">← Back to list</a><h2>Rockabye</h2><p class="meta">Clean Bandit, Sean Paul, Anne-Marie · 2016 · Duet</p><div class="lyrics">[Sean Paul:]
 Call it love and devotion
 Call it a mom&#x27;s adoration
 Foundation
@@ -6391,7 +6391,7 @@ Rockabye, don&#x27;t bother cry (no)
 Lift up your head, lift it up to the sky (oh, rockabye)
 Rockabye, don&#x27;t bother cry
 Angels surround you, just dry your eye</div></section>
-<section class="song" id="song-108"><a class="back" href="#">← 一覧へ戻る</a><h2>Saving All My Love for You</h2><p class="meta">Whitney Houston ・ 1985</p><div class="lyrics">A few stolen moments is all that we share
+<section class="song" id="song-108"><a class="back" href="#">← Back to list</a><h2>Saving All My Love for You</h2><p class="meta">Whitney Houston · 1985</p><div class="lyrics">A few stolen moments is all that we share
 You&#x27;ve got your family, and they need you there
 Though I&#x27;ve tried to resist, being last on your list
 But no other man&#x27;s gonna do
@@ -6422,7 +6422,7 @@ So I&#x27;m saving all my love
 Yeah I&#x27;m saving all my love
 Yes I&#x27;m saving all my love for you
 For you, for you</div></section>
-<section class="song" id="song-109"><a class="back" href="#">← 一覧へ戻る</a><h2>Secret Love Song</h2><p class="meta">Little Mix, Jason Derulo ・ 2016 ・ デュエット</p><div class="lyrics">When you hold me in the street
+<section class="song" id="song-109"><a class="back" href="#">← Back to list</a><h2>Secret Love Song</h2><p class="meta">Little Mix, Jason Derulo · 2016 · Duet</p><div class="lyrics">When you hold me in the street
 and you kiss me on the dance floor
 I wish that it could be like that
 Why can&#x27;t it be like that
@@ -6486,7 +6486,7 @@ Why can&#x27;t we be like that?
 
 Why can&#x27;t we be like that?
 Wish we could be like that</div></section>
-<section class="song" id="song-110"><a class="back" href="#">← 一覧へ戻る</a><h2>Self Control</h2><p class="meta">Laura Branigan ・ 1984</p><div class="lyrics">Oh, the night is my world
+<section class="song" id="song-110"><a class="back" href="#">← Back to list</a><h2>Self Control</h2><p class="meta">Laura Branigan · 1984</p><div class="lyrics">Oh, the night is my world
 City light painted girl
 In the day nothing matters
 It&#x27;s the night time that flatters
@@ -6537,7 +6537,7 @@ Oh-oh-oh, oh-oh-oh, oh-oh-oh, oh-oh-oh, oh-oh-oh
 You take my self, you take my self control
 You take my self, you take my self control
 You take my self, you take my self control...</div></section>
-<section class="song" id="song-111"><a class="back" href="#">← 一覧へ戻る</a><h2>Sexy Music</h2><p class="meta">The Nolans ・ 1981</p><div class="lyrics">Well I head on out at the local disco hall
+<section class="song" id="song-111"><a class="back" href="#">← Back to list</a><h2>Sexy Music</h2><p class="meta">The Nolans · 1981</p><div class="lyrics">Well I head on out at the local disco hall
 where the kids get down to the funky disco wall
 well the music hit me high, it hit me low
 ooh babe, I was getting it all
@@ -6595,7 +6595,7 @@ sexy, sexy music on the wall
 sexy music I was getting it all
 sexy, sexy music on the wall
 sexy music I was getting it all</div></section>
-<section class="song" id="song-112"><a class="back" href="#">← 一覧へ戻る</a><h2>Shake It Off</h2><p class="meta">Taylor Swift ・ 2014</p><div class="lyrics">I stay out too late
+<section class="song" id="song-112"><a class="back" href="#">← Back to list</a><h2>Shake It Off</h2><p class="meta">Taylor Swift · 2014</p><div class="lyrics">I stay out too late
 Got nothing in my brain
 That&#x27;s what people say, mmm-mmm
 That&#x27;s what people say, mmm-mmm
@@ -6684,7 +6684,7 @@ Shake it off, I shake it off,
 I, I, I shake it off, I shake it off (you&#x27;ve got to),
 I, I, I shake it off, I shake it off,
 I, I, I shake it off, I shake it off</div></section>
-<section class="song" id="song-113"><a class="back" href="#">← 一覧へ戻る</a><h2>Shape of You</h2><p class="meta">Ed Sheeran ・ 2017</p><div class="lyrics">The club isn&#x27;t the best place to find a lover
+<section class="song" id="song-113"><a class="back" href="#">← Back to list</a><h2>Shape of You</h2><p class="meta">Ed Sheeran · 2017</p><div class="lyrics">The club isn&#x27;t the best place to find a lover
 So the bar is where I go (mmmm)
 Me and my friends at the table doing shots
 Drinking fast and then we talk slow (mmmm)
@@ -6787,7 +6787,7 @@ Come on, be my baby, come on
 I&#x27;m in love with your body
 Every day discovering something brand new
 I&#x27;m in love with the shape of you</div></section>
-<section class="song" id="song-114"><a class="back" href="#">← 一覧へ戻る</a><h2>She Bangs</h2><p class="meta">Ricky Martin ・ 2000</p><div class="lyrics">Talk to me, tell me your name
+<section class="song" id="song-114"><a class="back" href="#">← Back to list</a><h2>She Bangs</h2><p class="meta">Ricky Martin · 2000</p><div class="lyrics">Talk to me, tell me your name
 You blow me off like it&#x27;s all the same
 You lit a fuse, and now I&#x27;m ticking away
 Like a bomb... yeah baby
@@ -6844,7 +6844,7 @@ I&#x27;ll let her rough me up
 And she talks like she walks
 
 [REPEAT CHORUS]</div></section>
-<section class="song" id="song-115"><a class="back" href="#">← 一覧へ戻る</a><h2>She Bangs (Spanish Version)</h2><p class="meta">Ricky Martin ・ 2000</p><div class="lyrics">La encontré sola en un bar
+<section class="song" id="song-115"><a class="back" href="#">← Back to list</a><h2>She Bangs (Spanish Version)</h2><p class="meta">Ricky Martin · 2000</p><div class="lyrics">La encontré sola en un bar
 sentí el embrujo de su mirar
 y fui cayendo en su trampa de amor
 la mentira es su juego
@@ -7108,7 +7108,7 @@ Because she is every
 
 Mujeres es una mujer
 Women in a woman</div></section>
-<section class="song" id="song-116"><a class="back" href="#">← 一覧へ戻る</a><h2>Shine</h2><p class="meta">Aswad ・ 1994</p><div class="lyrics">Come on and shine, shine like a star
+<section class="song" id="song-116"><a class="back" href="#">← Back to list</a><h2>Shine</h2><p class="meta">Aswad · 1994</p><div class="lyrics">Come on and shine, shine like a star
 Shining so bright, like the star that you are
 Oh, oh, oh, oh, shine into the future
 Spreading your light wherever you are
@@ -7177,7 +7177,7 @@ Oh, oh, oh, oh, shine into the future
 Spreading your light wherever you are
 
 Oh, oh, oh, oh, shine</div></section>
-<section class="song" id="song-117"><a class="back" href="#">← 一覧へ戻る</a><h2>Smooth Operator</h2><p class="meta">Sade ・ 1984</p><div class="lyrics">He&#x27;s laughing with another girl
+<section class="song" id="song-117"><a class="back" href="#">← Back to list</a><h2>Smooth Operator</h2><p class="meta">Sade · 1984</p><div class="lyrics">He&#x27;s laughing with another girl
 And playing with another heart
 Placing high stakes, making hearts ache
 He&#x27;s loved in seven languages
@@ -7222,7 +7222,7 @@ Smooth operator, smooth operator
 Smooth operator, smooth operator
 Smooth operator, smooth operator
 Smooth operator, smooth operator</div></section>
-<section class="song" id="song-118"><a class="back" href="#">← 一覧へ戻る</a><h2>Sorry</h2><p class="meta">Justin Bieber ・ 2015</p><div class="lyrics">You gotta go and get angry at all of my honesty
+<section class="song" id="song-118"><a class="back" href="#">← Back to list</a><h2>Sorry</h2><p class="meta">Justin Bieber · 2015</p><div class="lyrics">You gotta go and get angry at all of my honesty
 You know I try but I don&#x27;t do too well with apologies
 I hope I don&#x27;t run out of time. Could someone call a referee?
 &#x27;Cause I just need one more shot at forgiveness
@@ -7269,7 +7269,7 @@ Sorry, oh
 Sorry
 Yeah, I know-oh-oh, that I let you down (let you down)
 Is it too late to say I&#x27;m sorry now?</div></section>
-<section class="song" id="song-119"><a class="back" href="#">← 一覧へ戻る</a><h2>Starships</h2><p class="meta">Nicki Minaj ・ 2012</p><div class="lyrics">RedOne
+<section class="song" id="song-119"><a class="back" href="#">← Back to list</a><h2>Starships</h2><p class="meta">Nicki Minaj · 2012</p><div class="lyrics">RedOne
 
 Let’s go to the beach, each
 Let’s go get a wave
@@ -7346,7 +7346,7 @@ Let’s do this one last time
 Can&#x27;t stop...
 
  (We’re higher than a motherfucker) [x3]</div></section>
-<section class="song" id="song-120"><a class="back" href="#">← 一覧へ戻る</a><h2>Stay</h2><p class="meta">Zedd, Alessia Cara ・ 2017</p><div class="lyrics">Waiting for the time to pass you by
+<section class="song" id="song-120"><a class="back" href="#">← Back to list</a><h2>Stay</h2><p class="meta">Zedd, Alessia Cara · 2017</p><div class="lyrics">Waiting for the time to pass you by
 Hope the winds of change will change your mind
 I could give a thousand reasons why
 And I know you, and you&#x27;ve got to
@@ -7402,7 +7402,7 @@ Your hands on mine
 The clock is ticking, so stay
 All you have to do is stay
 Stay</div></section>
-<section class="song" id="song-121"><a class="back" href="#">← 一覧へ戻る</a><h2>Sugar</h2><p class="meta">Maroon 5 ・ 2015</p><div class="lyrics">I&#x27;m hurting, baby, I&#x27;m broken down
+<section class="song" id="song-121"><a class="back" href="#">← Back to list</a><h2>Sugar</h2><p class="meta">Maroon 5 · 2015</p><div class="lyrics">I&#x27;m hurting, baby, I&#x27;m broken down
 I need your loving, loving, I need it now
 When I&#x27;m without you
 I&#x27;m something weak
@@ -7497,7 +7497,7 @@ Your sugar
 Yes, please
 Won&#x27;t you come and put it down on me
 (Down on me, down on me)</div></section>
-<section class="song" id="song-122"><a class="back" href="#">← 一覧へ戻る</a><h2>The Sweetest Taboo</h2><p class="meta">Sade ・ 1985</p><div class="lyrics">If I tell you, If I tell you now 
+<section class="song" id="song-122"><a class="back" href="#">← Back to list</a><h2>The Sweetest Taboo</h2><p class="meta">Sade · 1985</p><div class="lyrics">If I tell you, If I tell you now 
 Will you keep on, Will you keep on loving me 
 
 If I tell you, If I tell you how I feel 
@@ -7530,7 +7530,7 @@ Every day is Christmas, and every night is new years eve
 Will you keep on loving me 
 Will you keep on, will you keep on 
 Bringing out the best in me</div></section>
-<section class="song" id="song-123"><a class="back" href="#">← 一覧へ戻る</a><h2>Take a Chance on Me</h2><p class="meta">JLS ・ 2011</p><div class="lyrics">You&#x27;re so scared to fall in love
+<section class="song" id="song-123"><a class="back" href="#">← Back to list</a><h2>Take a Chance on Me</h2><p class="meta">JLS · 2011</p><div class="lyrics">You&#x27;re so scared to fall in love
 Cause you end up in the dust
 Everytime everytime...
 
@@ -7601,7 +7601,7 @@ Baby take a chance on me
 Baby take a chance on me, oh oh oh
 
 So when you feel like trying again...</div></section>
-<section class="song" id="song-124"><a class="back" href="#">← 一覧へ戻る</a><h2>Tell Me Where It Hurts</h2><p class="meta">MYMP ・ 2005</p><div class="lyrics">What is that sad look in your eyes
+<section class="song" id="song-124"><a class="back" href="#">← Back to list</a><h2>Tell Me Where It Hurts</h2><p class="meta">MYMP · 2005</p><div class="lyrics">What is that sad look in your eyes
 Why are you crying
 Tell me now, tell me now
 Tell me, why you&#x27;re feelin&#x27; this way
@@ -7656,7 +7656,7 @@ Just tell me where it hurts now, tell me
 And I love you with a love so tender
 Oh and if you let me stay
 I&#x27;ll love all of the hurt away</div></section>
-<section class="song" id="song-125"><a class="back" href="#">← 一覧へ戻る</a><h2>thank u, next</h2><p class="meta">Ariana Grande ・ 2018</p><div class="lyrics">Thought I&#x27;d end up with Sean
+<section class="song" id="song-125"><a class="back" href="#">← Back to list</a><h2>thank u, next</h2><p class="meta">Ariana Grande · 2018</p><div class="lyrics">Thought I&#x27;d end up with Sean
 But he wasn&#x27;t a match
 Wrote some songs about Ricky
 Now I listen and laugh
@@ -7752,7 +7752,7 @@ Thank you, next
 Thank you, next
 Thank you, next
 Yeah, yee</div></section>
-<section class="song" id="song-126"><a class="back" href="#">← 一覧へ戻る</a><h2>Thank You</h2><p class="meta">Dido ・ 2000</p><div class="lyrics">My tea&#x27;s gone cold
+<section class="song" id="song-126"><a class="back" href="#">← Back to list</a><h2>Thank You</h2><p class="meta">Dido · 2000</p><div class="lyrics">My tea&#x27;s gone cold
 I&#x27;m wondering why I got out of bed at all
 The morning rain clouds up my window and I can&#x27;t see at all
 And even if I could it&#x27;d all be grey
@@ -7785,7 +7785,7 @@ Oh, Just to be with you is having the best day of my life
 
 And I want to thank you for giving me the best day of my life
 Oh, Just to be with you is having the best day of my life</div></section>
-<section class="song" id="song-127"><a class="back" href="#">← 一覧へ戻る</a><h2>That&#x27;s What I Like</h2><p class="meta">Bruno Mars ・ 2017</p><div class="lyrics">Hey, hey, hey
+<section class="song" id="song-127"><a class="back" href="#">← Back to list</a><h2>That&#x27;s What I Like</h2><p class="meta">Bruno Mars · 2017</p><div class="lyrics">Hey, hey, hey
 I got a condo in Manhattan
 Baby girl, what&#x27;s hatnin&#x27;?
 You and your ass invited
@@ -7861,7 +7861,7 @@ Sex by the fire at night (Sex by the fire at night)
 Silk sheets and diamonds all white
 Lucky for you, that&#x27;s what I like, that&#x27;s what I like
 Lucky for you, that&#x27;s what I like, that&#x27;s what I like</div></section>
-<section class="song" id="song-128"><a class="back" href="#">← 一覧へ戻る</a><h2>The Last Resort</h2><p class="meta">Eagles ・ 1976</p><div class="lyrics">She came from Providence, the one in Rhode Island
+<section class="song" id="song-128"><a class="back" href="#">← Back to list</a><h2>The Last Resort</h2><p class="meta">Eagles · 1976</p><div class="lyrics">She came from Providence, the one in Rhode Island
 Where the old world shadows hang heavy in the air
 She packed her hopes and dreams like a refugee,
 Just as her father came across the sea
@@ -7900,7 +7900,7 @@ And you can see them there on Sunday morning
 Stand up and sing about what it&#x27;s like up there
 They called it paradise, I don&#x27;t know why
 You call some place paradise, kiss it goodbye</div></section>
-<section class="song" id="song-129"><a class="back" href="#">← 一覧へ戻る</a><h2>The Lazy Song</h2><p class="meta">Bruno Mars ・ 2011</p><div class="lyrics">Today I don&#x27;t feel like doing anything
+<section class="song" id="song-129"><a class="back" href="#">← Back to list</a><h2>The Lazy Song</h2><p class="meta">Bruno Mars · 2011</p><div class="lyrics">Today I don&#x27;t feel like doing anything
 I just wanna lay in my bed
 Don&#x27;t feel like picking up my phone
 So leave a message at the tone
@@ -7971,7 +7971,7 @@ Ooh, hoo, ooh, hoo, ooh, ooh-ooh
 Nothing at all
 Ooh, hoo, ooh, hoo, ooh, ooh-ooh
 Nothing at all</div></section>
-<section class="song" id="song-130"><a class="back" href="#">← 一覧へ戻る</a><h2>The Sweetest Taboo</h2><p class="meta">Sade ・ 1985</p><div class="lyrics">If I tell you
+<section class="song" id="song-130"><a class="back" href="#">← Back to list</a><h2>The Sweetest Taboo</h2><p class="meta">Sade · 1985</p><div class="lyrics">If I tell you
 If I tell you now
 Will you keep on
 Will you keep on loving me
@@ -8019,7 +8019,7 @@ Every day is Christmas, and every night is new years eve
 Will you keep on loving me
 Will you keep on, will you keep on
 Bringing out the best in me</div></section>
-<section class="song" id="song-131"><a class="back" href="#">← 一覧へ戻る</a><h2>Thinking Out Loud</h2><p class="meta">Ed Sheeran ・ 2014</p><div class="lyrics">When your legs don&#x27;t work like they used to before
+<section class="song" id="song-131"><a class="back" href="#">← Back to list</a><h2>Thinking Out Loud</h2><p class="meta">Ed Sheeran · 2014</p><div class="lyrics">When your legs don&#x27;t work like they used to before
 And I can&#x27;t sweep you off of your feet
 Will your mouth still remember the taste of my love?
 Will your eyes still smile from your cheeks?
@@ -8067,8 +8067,8 @@ I&#x27;m thinking out loud
 But maybe we found love right where we are
 Oh, baby, we found love right where we are
 And we found love right where we are</div></section>
-<section class="song" id="song-132"><a class="back" href="#">← 一覧へ戻る</a><h2>Time After Time</h2><p class="meta">Cyndi Lauper ・ 1984</p><div class="lyrics"></div></section>
-<section class="song" id="song-133"><a class="back" href="#">← 一覧へ戻る</a><h2>Titanium</h2><p class="meta">David Guetta, Sia ・ 2011</p><div class="lyrics">[Sia:]
+<section class="song" id="song-132"><a class="back" href="#">← Back to list</a><h2>Time After Time</h2><p class="meta">Cyndi Lauper · 1984</p><div class="lyrics"></div></section>
+<section class="song" id="song-133"><a class="back" href="#">← Back to list</a><h2>Titanium</h2><p class="meta">David Guetta, Sia · 2011</p><div class="lyrics">[Sia:]
 You shout it out,
 But I can&#x27;t hear a word you say
 I&#x27;m talking loud not saying much
@@ -8120,9 +8120,9 @@ I am titanium
 You shoot me down but I won&#x27;t fall
 I am titanium
 I am titanium</div></section>
-<section class="song" id="song-134"><a class="back" href="#">← 一覧へ戻る</a><h2>The Tide Is High</h2><p class="meta">Blondie ・ 1980</p><div class="lyrics"></div></section>
-<section class="song" id="song-135"><a class="back" href="#">← 一覧へ戻る</a><h2>To Love You More</h2><p class="meta">Celine Dion ・ 1995</p><div class="lyrics"></div></section>
-<section class="song" id="song-136"><a class="back" href="#">← 一覧へ戻る</a><h2>Tonight, I Celebrate My Love</h2><p class="meta">Peabo Bryson, Roberta Flack ・ 1983 ・ デュエット</p><div class="lyrics">Tonight I celebrate my love for you
+<section class="song" id="song-134"><a class="back" href="#">← Back to list</a><h2>The Tide Is High</h2><p class="meta">Blondie · 1980</p><div class="lyrics"></div></section>
+<section class="song" id="song-135"><a class="back" href="#">← Back to list</a><h2>To Love You More</h2><p class="meta">Celine Dion · 1995</p><div class="lyrics"></div></section>
+<section class="song" id="song-136"><a class="back" href="#">← Back to list</a><h2>Tonight, I Celebrate My Love</h2><p class="meta">Peabo Bryson, Roberta Flack · 1983 · Duet</p><div class="lyrics">Tonight I celebrate my love for you
 It seems the natural thing to do
 Tonight no one&#x27;s gonna find us
 We&#x27;ll leave the world behind us
@@ -8156,7 +8156,7 @@ Is to get close to you
 
 Tonight I celebrate my love for you
 Tonight</div></section>
-<section class="song" id="song-137"><a class="back" href="#">← 一覧へ戻る</a><h2>Torn</h2><p class="meta">Natalie Imbruglia ・ 1997</p><div class="lyrics">I thought, I saw a man brought to life
+<section class="song" id="song-137"><a class="back" href="#">← Back to list</a><h2>Torn</h2><p class="meta">Natalie Imbruglia · 1997</p><div class="lyrics">I thought, I saw a man brought to life
 He was warm, he came around and he was dignified
 He showed me what it was to cry
 
@@ -8222,7 +8222,7 @@ This is how I feel
 I&#x27;m cold and I&#x27;m ashamed
 Bound and broken on the floor
 You&#x27;re a little late, I&#x27;m already torn, torn</div></section>
-<section class="song" id="song-138"><a class="back" href="#">← 一覧へ戻る</a><h2>Torn Between Two Lovers</h2><p class="meta">Mary MacGregor ・ 1976</p><div class="lyrics">There are times when a woman has to say what&#x27;s on her mind
+<section class="song" id="song-138"><a class="back" href="#">← Back to list</a><h2>Torn Between Two Lovers</h2><p class="meta">Mary MacGregor · 1976</p><div class="lyrics">There are times when a woman has to say what&#x27;s on her mind
 Even though she knows how much it&#x27;s gonna hurt
 Before I say another word let me tell you, I love you
 Let me hold you close and say these words as gently as I can
@@ -8261,7 +8261,7 @@ Lovin&#x27; you both is breakin&#x27; all the rules
 Torn between two lovers
 Feelin&#x27; like a fool
 Lovin&#x27; both of you is breakin&#x27; all the rules</div></section>
-<section class="song" id="song-139"><a class="back" href="#">← 一覧へ戻る</a><h2>True Blue</h2><p class="meta">Madonna ・ 1986</p><div class="lyrics">I&#x27;ve had other guys
+<section class="song" id="song-139"><a class="back" href="#">← Back to list</a><h2>True Blue</h2><p class="meta">Madonna · 1986</p><div class="lyrics">I&#x27;ve had other guys
 I&#x27;ve looked into their eyes
 But I never knew love before
 &#x27;Til you walked through my door
@@ -8312,7 +8312,7 @@ Those words whispered in your ear, I said
 True love, oh baby, true love, oh baby
 True love, oh baby, true love it&#x27;s
 [repeat]</div></section>
-<section class="song" id="song-140"><a class="back" href="#">← 一覧へ戻る</a><h2>Uptown Funk</h2><p class="meta">Mark Ronson, Bruno Mars ・ 2014</p><div class="lyrics">Doh
+<section class="song" id="song-140"><a class="back" href="#">← Back to list</a><h2>Uptown Funk</h2><p class="meta">Mark Ronson, Bruno Mars · 2014</p><div class="lyrics">Doh
  Doh doh doh, doh doh doh, doh doh
  Doh doh doh, doh doh doh, doh doh
  Doh doh doh, doh doh doh, doh doh
@@ -8446,7 +8446,7 @@ True love, oh baby, true love it&#x27;s
  Uptown Funk you up, Uptown Funk you up (say whaa?!)
  Uptown Funk you up
  Aaaaaaow!</div></section>
-<section class="song" id="song-141"><a class="back" href="#">← 一覧へ戻る</a><h2>Versace on the Floor</h2><p class="meta">Bruno Mars ・ 2017</p><div class="lyrics">Let&#x27;s take our time tonight, girl
+<section class="song" id="song-141"><a class="back" href="#">← Back to list</a><h2>Versace on the Floor</h2><p class="meta">Bruno Mars · 2017</p><div class="lyrics">Let&#x27;s take our time tonight, girl
 Above us all the stars are watchin&#x27;
 There&#x27;s no place I&#x27;d rather be in this world
 Your eyes are where I&#x27;m lost in
@@ -8506,7 +8506,7 @@ Ooh, take it off for me, for me, for me, for me now, girl
 Versace on the floor
 Floor
 Floor</div></section>
-<section class="song" id="song-142"><a class="back" href="#">← 一覧へ戻る</a><h2>Video Killed the Radio Star</h2><p class="meta">The Buggles ・ 1979</p><div class="lyrics">I heard you on the wireless back in &#x27;52
+<section class="song" id="song-142"><a class="back" href="#">← Back to list</a><h2>Video Killed the Radio Star</h2><p class="meta">The Buggles · 1979</p><div class="lyrics">I heard you on the wireless back in &#x27;52
 Lying awake intent at tuning in on you
 If I was young it didn&#x27;t stop you coming through
 Oh-a-a-a oh
@@ -8539,7 +8539,7 @@ Pictures came and broke your heart
 Put the blame on VTR
 
 You are a radio star</div></section>
-<section class="song" id="song-143"><a class="back" href="#">← 一覧へ戻る</a><h2>Way Back into Love</h2><p class="meta">Hugh Grant, Haley Bennett ・ 2007 ・ デュエット</p><div class="lyrics">[Verse 1]
+<section class="song" id="song-143"><a class="back" href="#">← Back to list</a><h2>Way Back into Love</h2><p class="meta">Hugh Grant, Haley Bennett · 2007 · Duet</p><div class="lyrics">[Verse 1]
 (Drew Barrymore)
 I&#x27;ve been living with a shadow overhead,
 I&#x27;ve been sleeping with a cloud above my bed,
@@ -8595,7 +8595,7 @@ And if I open my heart to you,
 I&#x27;m hoping you&#x27;ll show me what to do,
 And if you help me to start again,
 You know that I&#x27;ll be there for you in the end!</div></section>
-<section class="song" id="song-144"><a class="back" href="#">← 一覧へ戻る</a><h2>We Are the World</h2><p class="meta">USA for Africa ・ 1985 ・ デュエット</p><div class="lyrics">There comes a time when we heed a certain call
+<section class="song" id="song-144"><a class="back" href="#">← Back to list</a><h2>We Are the World</h2><p class="meta">USA for Africa · 1985 · Duet</p><div class="lyrics">There comes a time when we heed a certain call
  When the world must come together as one
  There are people dying
  And it&#x27;s time to lend a hand to life
@@ -8630,7 +8630,7 @@ You know that I&#x27;ll be there for you in the end!</div></section>
  When we stand together as one
 
 [Chorus]</div></section>
-<section class="song" id="song-145"><a class="back" href="#">← 一覧へ戻る</a><h2>What Do You Mean?</h2><p class="meta">Justin Bieber ・ 2015</p><div class="lyrics">What do you mean? Ooh
+<section class="song" id="song-145"><a class="back" href="#">← Back to list</a><h2>What Do You Mean?</h2><p class="meta">Justin Bieber · 2015</p><div class="lyrics">What do you mean? Ooh
 When you nod your head yes
 But you wanna say no
 What do you mean? Hey
@@ -8701,7 +8701,7 @@ What do you mean?
 Oh oh oh what do you mean?
 Better make up your mind
 What do you mean?</div></section>
-<section class="song" id="song-146"><a class="back" href="#">← 一覧へ戻る</a><h2>What Makes You Beautiful</h2><p class="meta">One Direction ・ 2011</p><div class="lyrics">[Verse 1]
+<section class="song" id="song-146"><a class="back" href="#">← Back to list</a><h2>What Makes You Beautiful</h2><p class="meta">One Direction · 2011</p><div class="lyrics">[Verse 1]
 [Liam]
  You&#x27;re insecure,
  Don&#x27;t know what for,
@@ -8799,7 +8799,7 @@ To prove I&#x27;m right
 
 [Harry]
  That&#x27;s what makes you beautiful</div></section>
-<section class="song" id="song-147"><a class="back" href="#">← 一覧へ戻る</a><h2>What&#x27;s Love Got to Do with It</h2><p class="meta">Tina Turner ・ 1984</p><div class="lyrics">You must understand though the touch of your hand
+<section class="song" id="song-147"><a class="back" href="#">← Back to list</a><h2>What&#x27;s Love Got to Do with It</h2><p class="meta">Tina Turner · 1984</p><div class="lyrics">You must understand though the touch of your hand
 Makes my pulse react
 That it&#x27;s only the thrill of boy meeting girl
 Opposites attract
@@ -8849,7 +8849,7 @@ Oh what&#x27;s love got to do, got to do with it
 What&#x27;s love but a second hand emotion
 What&#x27;s love got to do, got to do with it
 Who needs a heart when a heart can be broken</div></section>
-<section class="song" id="song-148"><a class="back" href="#">← 一覧へ戻る</a><h2>When Doves Cry</h2><p class="meta">Prince ・ 1984</p><div class="lyrics">Dig if you will the picture
+<section class="song" id="song-148"><a class="back" href="#">← Back to list</a><h2>When Doves Cry</h2><p class="meta">Prince · 1984</p><div class="lyrics">Dig if you will the picture
 Of you and I engaged in a kiss
 The sweat of your body covers me
 Can you my darling
@@ -8912,7 +8912,7 @@ Darling don&#x27;t cry
 Don&#x27;t cry
 Don&#x27;t cry
 Don&#x27;t don&#x27;t cry</div></section>
-<section class="song" id="song-149"><a class="back" href="#">← 一覧へ戻る</a><h2>When I Was Your Man</h2><p class="meta">Bruno Mars ・ 2013</p><div class="lyrics">Same bed but it feels just a little bit bigger now
+<section class="song" id="song-149"><a class="back" href="#">← Back to list</a><h2>When I Was Your Man</h2><p class="meta">Bruno Mars · 2013</p><div class="lyrics">Same bed but it feels just a little bit bigger now
 Our song on the radio but it don&#x27;t sound the same
 When our friends talk about you, all it does is just tear me down
 &#x27;Cause my heart breaks a little when I hear your name
@@ -8960,7 +8960,7 @@ Do all the things I should have done
 When I was your man
 Do all the things I should have done
 When I was your man</div></section>
-<section class="song" id="song-150"><a class="back" href="#">← 一覧へ戻る</a><h2>Who&#x27;s That Girl</h2><p class="meta">Madonna ・ 1987</p><div class="lyrics">Who&#x27;s that girl, who&#x27;s that girl
+<section class="song" id="song-150"><a class="back" href="#">← Back to list</a><h2>Who&#x27;s That Girl</h2><p class="meta">Madonna · 1987</p><div class="lyrics">Who&#x27;s that girl, who&#x27;s that girl
 
 When you see her, say a prayer and kiss your heart goodbye
 She&#x27;s trouble, in a word get closer to the fire
@@ -8999,7 +8999,7 @@ Now, who&#x27;s that girl
 Now, who&#x27;s that girl
 
 [chorus]</div></section>
-<section class="song" id="song-151"><a class="back" href="#">← 一覧へ戻る</a><h2>Wild World</h2><p class="meta">Mr. Big ・ 1993</p><div class="lyrics">La...la...la...la...la
+<section class="song" id="song-151"><a class="back" href="#">← Back to list</a><h2>Wild World</h2><p class="meta">Mr. Big · 1993</p><div class="lyrics">La...la...la...la...la
 
 Now that I&#x27;ve lost everything to you
 You say you wanna start something new
@@ -9043,7 +9043,7 @@ Oh, baby, baby, it&#x27;s a wild world
 It&#x27;s hard to get by just upon a smile, yeah,
 Oh, baby, baby, it&#x27;s a wild world
 And I&#x27;ll always remember you like a child girl</div></section>
-<section class="song" id="song-152"><a class="back" href="#">← 一覧へ戻る</a><h2>Wish</h2><p class="meta">Donna Cruz, Jason Everly ・ 1996 ・ デュエット</p><div class="lyrics">There&#x27;s a star in the sky tonight
+<section class="song" id="song-152"><a class="back" href="#">← Back to list</a><h2>Wish</h2><p class="meta">Donna Cruz, Jason Everly · 1996 · Duet</p><div class="lyrics">There&#x27;s a star in the sky tonight
 And it trembles like my heart
 And in this world, we&#x27;re all alone tonight,
 So close and yet so far.
@@ -9075,7 +9075,7 @@ Lagi kong kasama ang pag-ibig mo--Dito sa puso ko
 Wish...Sana bawat sandali
 Ay maging walang hanggan
 Mahal kita hanggang kailanpaman</div></section>
-<section class="song" id="song-153"><a class="back" href="#">← 一覧へ戻る</a><h2>Wish You Were Here</h2><p class="meta">Avril Lavigne ・ 2011</p><div class="lyrics">[Verse 1:]
+<section class="song" id="song-153"><a class="back" href="#">← Back to list</a><h2>Wish You Were Here</h2><p class="meta">Avril Lavigne · 2011</p><div class="lyrics">[Verse 1:]
 I can be tough
 I can be strong
 But with you
@@ -9166,7 +9166,7 @@ Damn, Damn, Damn
 What I&#x27;d do to have you
 Near, near, near
 I wish you were here.</div></section>
-<section class="song" id="song-154"><a class="back" href="#">← 一覧へ戻る</a><h2>Won&#x27;t Go Home Without You</h2><p class="meta">Maroon 5 ・ 2007</p><div class="lyrics">I asked her to stay
+<section class="song" id="song-154"><a class="back" href="#">← Back to list</a><h2>Won&#x27;t Go Home Without You</h2><p class="meta">Maroon 5 · 2007</p><div class="lyrics">I asked her to stay
 But she wouldn&#x27;t listen
 And she left before I had the chance to say, oh
 The words that would mend
@@ -9222,7 +9222,7 @@ I won&#x27;t go home without you
 And I won&#x27;t go home without you
 And I won&#x27;t go home without you
 And I won&#x27;t go home without you</div></section>
-<section class="song" id="song-155"><a class="back" href="#">← 一覧へ戻る</a><h2>Worth It</h2><p class="meta">Fifth Harmony, Kid Ink ・ 2015 ・ デュエット</p><div class="lyrics">[Camila:]
+<section class="song" id="song-155"><a class="back" href="#">← Back to list</a><h2>Worth It</h2><p class="meta">Fifth Harmony, Kid Ink · 2015 · Duet</p><div class="lyrics">[Camila:]
 Give it to me, I&#x27;m worth it
 Baby, I&#x27;m worth it
 Uh huh I&#x27;m worth it
@@ -9332,7 +9332,7 @@ Uh huh I&#x27;m worth it
 Gimme gimme I&#x27;m worth it
 
 Give it to me, I&#x27;m worth it</div></section>
-<section class="song" id="song-156"><a class="back" href="#">← 一覧へ戻る</a><h2>Wrecking Ball</h2><p class="meta">Miley Cyrus ・ 2013</p><div class="lyrics">[Verse 1 - Miley]
+<section class="song" id="song-156"><a class="back" href="#">← Back to list</a><h2>Wrecking Ball</h2><p class="meta">Miley Cyrus · 2013</p><div class="lyrics">[Verse 1 - Miley]
 We clawed, we chained our hearts in vain
 We jumped, never asking why
 We kissed, I fell under your spell
@@ -9396,7 +9396,7 @@ Yeah, I just closed my eyes and swung
 Left me crouching in a blaze and fall
 All you ever did was wreck me
 Yeah, you wreck me</div></section>
-<section class="song" id="song-157"><a class="back" href="#">← 一覧へ戻る</a><h2>You Make Me Feel...</h2><p class="meta">Cobra Starship, Sabi ・ 2011 ・ デュエット</p><div class="lyrics">[Intro]
+<section class="song" id="song-157"><a class="back" href="#">← Back to list</a><h2>You Make Me Feel...</h2><p class="meta">Cobra Starship, Sabi · 2011 · Duet</p><div class="lyrics">[Intro]
 La La La La La
 La La La La La
 La La La La La
@@ -9485,7 +9485,7 @@ You make me feel so
 La La La La La
 You make me feel so
 La La La La La</div></section>
-<section class="song" id="song-158"><a class="back" href="#">← 一覧へ戻る</a><h2>You&#x27;re Still the One</h2><p class="meta">Shania Twain ・ 1998</p><div class="lyrics">When I first saw you, I saw love
+<section class="song" id="song-158"><a class="back" href="#">← Back to list</a><h2>You&#x27;re Still the One</h2><p class="meta">Shania Twain · 1998</p><div class="lyrics">When I first saw you, I saw love
 And the first time you touched me, I felt love
 And after all this time, you&#x27;re still the one I love
 
@@ -9540,7 +9540,7 @@ You&#x27;re still the one I kiss good night
 
 I&#x27;m so glad we made it
 Look how far we&#x27;ve come my baby</div></section>
-<section class="song" id="song-159"><a class="back" href="#">← 一覧へ戻る</a><h2>Shallow</h2><p class="meta">Lady Gaga, Bradley Cooper ・ 2018 ・ デュエット</p><div class="lyrics">Tell me somethin&#x27;, girl
+<section class="song" id="song-159"><a class="back" href="#">← Back to list</a><h2>Shallow</h2><p class="meta">Lady Gaga, Bradley Cooper · 2018 · Duet</p><div class="lyrics">Tell me somethin&#x27;, girl
 Are you happy in this modern world?
 Or do you need more?
 
@@ -9575,7 +9575,7 @@ In the sha-ha-sha-ha-llow
 In the sha-ha-sha-la-la-la-llow
 In the sha-ha-sha-ha-llow
 We&#x27;re far from the shallow now</div></section>
-<section class="song" id="song-160"><a class="back" href="#">← 一覧へ戻る</a><h2>I Don&#x27;t Care</h2><p class="meta">Ed Sheeran, Justin Bieber ・ 2019 ・ デュエット</p><div class="lyrics">I&#x27;m at a party I don&#x27;t wanna be at
+<section class="song" id="song-160"><a class="back" href="#">← Back to list</a><h2>I Don&#x27;t Care</h2><p class="meta">Ed Sheeran, Justin Bieber · 2019 · Duet</p><div class="lyrics">I&#x27;m at a party I don&#x27;t wanna be at
 And I don&#x27;t ever wear a suit and tie, yeah
 Wonderin&#x27; if I could sneak out the back
 Nobody&#x27;s even lookin&#x27; me in my eyes
@@ -9647,7 +9647,7 @@ And you&#x27;re making me feel like I&#x27;m loved by somebody
 I can deal with the bad nights
 When I&#x27;m with my baby, yeah
 Ooh, ooh, ooh, ooh, ooh, ooh</div></section>
-<section class="song" id="song-161"><a class="back" href="#">← 一覧へ戻る</a><h2>Take Five</h2><p class="meta">JUJU ・ 2013</p><div class="lyrics">Won&#x27;t you stop and take
+<section class="song" id="song-161"><a class="back" href="#">← Back to list</a><h2>Take Five</h2><p class="meta">JUJU · 2013</p><div class="lyrics">Won&#x27;t you stop and take
 A little time out with me
 Just take five
 Just take five
@@ -9673,7 +9673,7 @@ You could offer a light
 Start a little conversation now
 It&#x27;s alright, just take five
 Just take five</div></section>
-<section class="song" id="song-162"><a class="back" href="#">← 一覧へ戻る</a><h2>You Need to Calm Down</h2><p class="meta">Taylor Swift ・ 2019</p><div class="lyrics">You are somebody that I don&#x27;t know
+<section class="song" id="song-162"><a class="back" href="#">← Back to list</a><h2>You Need to Calm Down</h2><p class="meta">Taylor Swift · 2019</p><div class="lyrics">You are somebody that I don&#x27;t know
 But you&#x27;re takin&#x27; shots at me like it&#x27;s Patrón
 And I&#x27;m just like, damn, it&#x27;s 7 AM
 Say it in the street, that&#x27;s a knock-out
@@ -9720,7 +9720,7 @@ And I&#x27;m just like oh-oh, oh-oh, oh-oh, oh-oh, oh-oh (Oh)
 You need to just stop (Can you stop?)
 Like can you just not step on our gowns?
 You need to calm down</div></section>
-<section class="song" id="song-163"><a class="back" href="#">← 一覧へ戻る</a><h2>Señorita</h2><p class="meta">Shawn Mendes, Camila Cabello ・ 2019 ・ デュエット</p><div class="lyrics">I love it when you call me señorita
+<section class="song" id="song-163"><a class="back" href="#">← Back to list</a><h2>Señorita</h2><p class="meta">Shawn Mendes, Camila Cabello · 2019 · Duet</p><div class="lyrics">I love it when you call me señorita
 I wish I could pretend I didn&#x27;t need ya
 But every touch is ooh-la-la-la
 It&#x27;s true, la-la-la
@@ -9780,7 +9780,7 @@ For ya (Oh, she loves it when I call)
 For ya
 Ooh, I should be runnin&#x27;
 Ooh, you keep me coming for ya</div></section>
-<section class="song" id="song-164"><a class="back" href="#">← 一覧へ戻る</a><h2>Chandelier</h2><p class="meta">Sia ・ 2014</p><div class="lyrics">Party girls don&#x27;t get hurt
+<section class="song" id="song-164"><a class="back" href="#">← Back to list</a><h2>Chandelier</h2><p class="meta">Sia · 2014</p><div class="lyrics">Party girls don&#x27;t get hurt
 Can&#x27;t feel anything, when will I learn?
 I push it down, push it down
 I&#x27;m the one &quot;for a good time call&quot;
@@ -9847,7 +9847,7 @@ On for tonight, on for tonight
 &#x27;Cause I&#x27;m just holding on for tonight
 Oh, I&#x27;m just holding on for tonight
 On for tonight, on for tonight</div></section>
-<section class="song" id="song-165"><a class="back" href="#">← 一覧へ戻る</a><h2>Cheap Thrills</h2><p class="meta">Sia, Sean Paul ・ 2016 ・ デュエット</p><div class="lyrics">Up with it, girl
+<section class="song" id="song-165"><a class="back" href="#">← Back to list</a><h2>Cheap Thrills</h2><p class="meta">Sia, Sean Paul · 2016 · Duet</p><div class="lyrics">Up with it, girl
 Rock with it, girl
 Show them it, girl
 Bada bang bang
@@ -9949,7 +9949,7 @@ La, la, la, la, la, la
 (I love cheap thrills!)
 La, la, la, la, la, la
 (I love cheap thrills!)</div></section>
-<section class="song" id="song-166"><a class="back" href="#">← 一覧へ戻る</a><h2>The Greatest</h2><p class="meta">Sia ・ 2016</p><div class="lyrics">Uh-oh, runnin&#x27; out of breath, but I
+<section class="song" id="song-166"><a class="back" href="#">← Back to list</a><h2>The Greatest</h2><p class="meta">Sia · 2016</p><div class="lyrics">Uh-oh, runnin&#x27; out of breath, but I
 Oh, I, I got stamina
 Uh-oh, running now, I close my eyes
 Well, oh, I got stamina
@@ -10030,7 +10030,7 @@ The greatest, the greatest alive
 (Don&#x27;t give up, don&#x27;t give up, don&#x27;t give up; I got stamina)
 The greatest, the greatest alive
 (Don&#x27;t give up, don&#x27;t give up, don&#x27;t give up; I got stamina)</div></section>
-<section class="song" id="song-167"><a class="back" href="#">← 一覧へ戻る</a><h2>Hard to Say I&#x27;m Sorry</h2><p class="meta">Chicago ・ 1982</p><div class="lyrics">Everybody needs a little time away
+<section class="song" id="song-167"><a class="back" href="#">← Back to list</a><h2>Hard to Say I&#x27;m Sorry</h2><p class="meta">Chicago · 1982</p><div class="lyrics">Everybody needs a little time away
 I heard her say, from each other
 Even lovers need a holiday
 Far away, from each other
@@ -10070,7 +10070,7 @@ When we get there gonna jump in the air
 No one&#x27;ll see us cause there&#x27;s nobody there
 After all, you know we really don&#x27;t care
 Hold on, I&#x27;m gonna take you there</div></section>
-<section class="song" id="song-168"><a class="back" href="#">← 一覧へ戻る</a><h2>10,000 Hours</h2><p class="meta">Dan + Shay, Justin Bieber ・ 2019 ・ デュエット</p><div class="lyrics">Do you love the rain, does it make you dance
+<section class="song" id="song-168"><a class="back" href="#">← Back to list</a><h2>10,000 Hours</h2><p class="meta">Dan + Shay, Justin Bieber · 2019 · Duet</p><div class="lyrics">Do you love the rain, does it make you dance
 When you&#x27;re drunk with your friends at a party?
 What&#x27;s your favorite song, does it make you smile?
 Do you think of me?
@@ -10113,7 +10113,7 @@ And I...
 Do you love the rain, does it make you dance?
 I&#x27;m gonna love you (I&#x27;m gonna love you)
 I&#x27;m gonna love you</div></section>
-<section class="song" id="song-169"><a class="back" href="#">← 一覧へ戻る</a><h2>Memories</h2><p class="meta">Maroon 5 ・ 2019</p><div class="lyrics">Here&#x27;s to the ones that we got
+<section class="song" id="song-169"><a class="back" href="#">← Back to list</a><h2>Memories</h2><p class="meta">Maroon 5 · 2019</p><div class="lyrics">Here&#x27;s to the ones that we got
 Cheers to the wish you were here, but you&#x27;re not
 &#x27;Cause the drinks bring back all the memories
 Of everything we&#x27;ve been through
@@ -10177,7 +10177,7 @@ Memories bring back, memories bring back you
 Yeah, yeah, yeah
 Yeah, yeah, yeah, yeah, yeah, no, no
 Memories bring back, memories bring back you</div></section>
-<section class="song" id="song-170"><a class="back" href="#">← 一覧へ戻る</a><h2>Stuck with U</h2><p class="meta">Ariana Grande, Justin Bieber ・ 2020 ・ デュエット</p><div class="lyrics">Mm mm mm
+<section class="song" id="song-170"><a class="back" href="#">← Back to list</a><h2>Stuck with U</h2><p class="meta">Ariana Grande, Justin Bieber · 2020 · Duet</p><div class="lyrics">Mm mm mm
 Hey, yeah
 (That&#x27;s just for fun)
 (What?)
@@ -10256,7 +10256,7 @@ Lovin&#x27; you, hatin&#x27; you, wantin&#x27; you
 I&#x27;m stuck with you, stuck with you, stuck with
 You
 Stuck with you, stuck with you, stuck with you</div></section>
-<section class="song" id="song-171"><a class="back" href="#">← 一覧へ戻る</a><h2>Love You Like a Love Song</h2><p class="meta">Selena Gomez &amp; the Scene ・ 2011</p><div class="lyrics">It&#x27;s been said and done
+<section class="song" id="song-171"><a class="back" href="#">← Back to list</a><h2>Love You Like a Love Song</h2><p class="meta">Selena Gomez &amp; the Scene · 2011</p><div class="lyrics">It&#x27;s been said and done
 Every beautiful thought&#x27;s been already sung
 And I guess right now, here&#x27;s another one
 So your melody will play on and on, with the best of &#x27;em
@@ -10304,7 +10304,7 @@ I, I love you like a love song, baby (I love you, love song, baby)
 I, I love you like a love song, baby (I love you, love song, baby)
 I, I love you like a love song, baby (I love you, I love you)
 Like a love song</div></section>
-<section class="song" id="song-172"><a class="back" href="#">← 一覧へ戻る</a><h2>Side to Side</h2><p class="meta">Ariana Grande, Nicki Minaj ・ 2016 ・ デュエット</p><div class="lyrics">I&#x27;ve been here all night (Ariana)
+<section class="song" id="song-172"><a class="back" href="#">← Back to list</a><h2>Side to Side</h2><p class="meta">Ariana Grande, Nicki Minaj · 2016 · Duet</p><div class="lyrics">I&#x27;ve been here all night (Ariana)
 I&#x27;ve been here all day (Nicki Minaj)
 And boy, got me walkin&#x27; side to side
 (Let them hoes know)
@@ -10382,7 +10382,7 @@ This the new style with the fresh type of flow
 Wrist icicle, ride dick bicycle
 Come true yo, get you this type of blow
 If you wanna menage I got a tricycle</div></section>
-<section class="song" id="song-173"><a class="back" href="#">← 一覧へ戻る</a><h2>Photograph</h2><p class="meta">Ed Sheeran ・ 2015</p><div class="lyrics">Loving can hurt
+<section class="song" id="song-173"><a class="back" href="#">← Back to list</a><h2>Photograph</h2><p class="meta">Ed Sheeran · 2015</p><div class="lyrics">Loving can hurt
 Loving can hurt sometimes
 But it&#x27;s the only thing that I know
 When it gets hard
@@ -10447,7 +10447,7 @@ I will remember how you kissed me
 Under the lamppost back on 6th street
 Hearing you whisper through the phone,
 &quot;Wait for me to come home.&quot;</div></section>
-<section class="song" id="song-174"><a class="back" href="#">← 一覧へ戻る</a><h2>Umbrella</h2><p class="meta">Rihanna, Jay-Z ・ 2007</p><div class="lyrics">Uh-huh, uh-huh (Yeah, Rihanna)
+<section class="song" id="song-174"><a class="back" href="#">← Back to list</a><h2>Umbrella</h2><p class="meta">Rihanna, Jay-Z · 2007</p><div class="lyrics">Uh-huh, uh-huh (Yeah, Rihanna)
 Uh-huh, uh-huh (Good Girl Gone Bad)
 Uh-huh, uh-huh (Take three, action)
 Uh-huh, uh-huh (Hov)
@@ -10540,7 +10540,7 @@ Come here to me
 Come into me
 It&#x27;s pouring rain
 It&#x27;s pouring rain</div></section>
-<section class="song" id="song-175"><a class="back" href="#">← 一覧へ戻る</a><h2>Slumber Party</h2><p class="meta">Britney Spears ・ 2016</p><div class="lyrics">I think I see confetti from this potion
+<section class="song" id="song-175"><a class="back" href="#">← Back to list</a><h2>Slumber Party</h2><p class="meta">Britney Spears · 2016</p><div class="lyrics">I think I see confetti from this potion
 Pillow fights and feathers, overdosing
 Smells like a cologne and candy lotion
 Like a slumber party
@@ -10608,7 +10608,7 @@ Put on our music that makes us go fucking crazy, go
 Like a slumber party (a slumber party)
 Like a slumber party (I go crazy for you)
 Like a slumber party</div></section>
-<section class="song" id="song-176"><a class="back" href="#">← 一覧へ戻る</a><h2>Title</h2><p class="meta">Meghan Trainor ・ 2015</p><div class="lyrics">If you want my love
+<section class="song" id="song-176"><a class="back" href="#">← Back to list</a><h2>Title</h2><p class="meta">Meghan Trainor · 2015</p><div class="lyrics">If you want my love
 You gotta do what it does
 If you want these sweet-like-sugar Gucci lips
 You gotta give it up
@@ -10673,7 +10673,7 @@ Gimme that title, title
 Come and gimme that title, title
 Better gimme that title, title
 Come and gimme that title, title</div></section>
-<section class="song" id="song-177"><a class="back" href="#">← 一覧へ戻る</a><h2>Left and Right</h2><p class="meta">Charlie Puth, Jung Kook ・ 2022 ・ デュエット</p><div class="lyrics">Chorus: Charlie Puth]
+<section class="song" id="song-177"><a class="back" href="#">← Back to list</a><h2>Left and Right</h2><p class="meta">Charlie Puth, Jung Kook · 2022 · Duet</p><div class="lyrics">Chorus: Charlie Puth]
 Memories follow me left and right
 I can feel you over here, I can feel you over here
 You take up every corner of my mind
@@ -10747,7 +10747,7 @@ You take up every corner of my mind
 I can feel you over here, I can feel you over here
 You take up every corner of my mind
 (Whatcha gon&#x27; do now?)</div></section>
-<section class="song" id="song-178"><a class="back" href="#">← 一覧へ戻る</a><h2>STAY</h2><p class="meta">The Kid LAROI, Justin Bieber ・ 2021 ・ デュエット</p><div class="lyrics">I do the same thing I told you that I never would
+<section class="song" id="song-178"><a class="back" href="#">← Back to list</a><h2>STAY</h2><p class="meta">The Kid LAROI, Justin Bieber · 2021 · Duet</p><div class="lyrics">I do the same thing I told you that I never would
 I told you I&#x27;d change, even when I knew I never could
 I know that I can&#x27;t find nobody else as good as you
 I need you to stay, need you to stay, hey (Oh)
@@ -10796,7 +10796,7 @@ I need you to stay, need you to stay, hey
 
 Woah-oh
 I need you to stay, need you to stay, hey</div></section>
-<section class="song" id="song-179"><a class="back" href="#">← 一覧へ戻る</a><h2>How Will I Know</h2><p class="meta">Whitney Houston ・ 1985</p><div class="lyrics">There&#x27;s a boy I know, he&#x27;s the one I dream of
+<section class="song" id="song-179"><a class="back" href="#">← Back to list</a><h2>How Will I Know</h2><p class="meta">Whitney Houston · 1985</p><div class="lyrics">There&#x27;s a boy I know, he&#x27;s the one I dream of
 Looks into my eyes, takes me to the clouds above, mmm-hmm
 Oh, I lose control, can&#x27;t seem to get enough, uh-huh
 When I wake from dreaming, tell me, is it really love?
@@ -10861,7 +10861,7 @@ How will I know? (I say a prayer)
 How will I know?
 Ooh, how will I know? (I fall in love)
 How will I love, hey, how will I know? (I&#x27;m asking you)</div></section>
-<section class="song" id="song-180"><a class="back" href="#">← 一覧へ戻る</a><h2>Life Goes On</h2><p class="meta">Fergie ・ 2016</p><div class="lyrics">Mmm, da-da-da-da-da-da-da
+<section class="song" id="song-180"><a class="back" href="#">← Back to list</a><h2>Life Goes On</h2><p class="meta">Fergie · 2016</p><div class="lyrics">Mmm, da-da-da-da-da-da-da
 
 Every day when I wake up
 Tryna read my fortune on the bottom of my coffee cup
@@ -10943,7 +10943,7 @@ You could go or you could stay
 Mmm, mmm
 You could go, you could stay
 Da-da-da-da-da-da-da</div></section>
-<section class="song" id="song-181"><a class="back" href="#">← 一覧へ戻る</a><h2>Daniel</h2><p class="meta">Elton John ・ 1973</p><div class="lyrics">Daniel is traveling tonight on a plane
+<section class="song" id="song-181"><a class="back" href="#">← Back to list</a><h2>Daniel</h2><p class="meta">Elton John · 1973</p><div class="lyrics">Daniel is traveling tonight on a plane
 I can see the red tail lights heading for Spain
 Oh, and I can see Daniel waving goodbye
 God, it looks like Daniel, must be the clouds in my eyes
@@ -10968,7 +10968,7 @@ I can see the red tail lights heading for Spain
 Oh, and I can see Daniel waving goodbye
 God, it looks like Daniel, must be the clouds in my eyes
 Oh God, it looks like Daniel, must be the clouds in my eyes</div></section>
-<section class="song" id="song-182"><a class="back" href="#">← 一覧へ戻る</a><h2>Danger Zone</h2><p class="meta">Kenny Loggins ・ 1986</p><div class="lyrics">Revvin&#x27; up your engine
+<section class="song" id="song-182"><a class="back" href="#">← Back to list</a><h2>Danger Zone</h2><p class="meta">Kenny Loggins · 1986</p><div class="lyrics">Revvin&#x27; up your engine
 Listen to her howlin&#x27; roar
 Metal under tension
 Beggin&#x27; you to touch and go
@@ -11011,7 +11011,7 @@ Ride into the Danger Zone
 
 Highway to the Danger Zone
 Gonna take</div></section>
-<section class="song" id="song-183"><a class="back" href="#">← 一覧へ戻る</a><h2>Holding Out for a Hero</h2><p class="meta">Bonnie Tyler ・ 1984</p><div class="lyrics">Where have all the good men gone
+<section class="song" id="song-183"><a class="back" href="#">← Back to list</a><h2>Holding Out for a Hero</h2><p class="meta">Bonnie Tyler · 1984</p><div class="lyrics">Where have all the good men gone
 And where are all the gods?
 Where&#x27;s the streetwise Hercules
 To fight the rising odds?
@@ -11083,7 +11083,7 @@ He&#x27;s gotta be sure, and it&#x27;s gotta be soon
 And he&#x27;s gotta be larger than life
 I need a hero
 I&#x27;m holding out for a hero &#x27;til the end of the night</div></section>
-<section class="song" id="song-184"><a class="back" href="#">← 一覧へ戻る</a><h2>Nikita</h2><p class="meta">Elton John ・ 1985</p><div class="lyrics">Hey Nikita, is it cold
+<section class="song" id="song-184"><a class="back" href="#">← Back to list</a><h2>Nikita</h2><p class="meta">Elton John · 1985</p><div class="lyrics">Hey Nikita, is it cold
 In your little corner of the world?
 You could roll around the globe
 And never find a warmer soul to know
@@ -11136,7 +11136,7 @@ Oh no, Nikita, you&#x27;ll never know
 (Nikita) counting ten tin soldiers in a row
 (Nikita) counting ten tin soldiers in a row
 (Nikita) counting ten tin soldiers in a row</div></section>
-<section class="song" id="song-185"><a class="back" href="#">← 一覧へ戻る</a><h2>IDGAF</h2><p class="meta">Dua Lipa ・ 2018</p><div class="lyrics">You call me all friendly
+<section class="song" id="song-185"><a class="back" href="#">← Back to list</a><h2>IDGAF</h2><p class="meta">Dua Lipa · 2018</p><div class="lyrics">You call me all friendly
 Tellin&#x27; me how much you miss me
 That&#x27;s funny, I guess you&#x27;ve heard my songs
 Well, I&#x27;m too busy for your business
@@ -11217,7 +11217,7 @@ Boy, I don&#x27;t give a fuck
 So stop tryna get to me (get to me)
 Tch, get up off your knees
 &#x27;Cause, boy, I don&#x27;t give a fuck</div></section>
-<section class="song" id="song-186"><a class="back" href="#">← 一覧へ戻る</a><h2>Flowers</h2><p class="meta">Miley Cyrus ・ 2023</p><div class="lyrics">We were good, we were gold
+<section class="song" id="song-186"><a class="back" href="#">← Back to list</a><h2>Flowers</h2><p class="meta">Miley Cyrus · 2023</p><div class="lyrics">We were good, we were gold
 Kinda dream that can&#x27;t be sold
 We were right &#x27;til we weren&#x27;t
 Built a home and watched it burn
@@ -11273,7 +11273,7 @@ Can love me better, I can love me better, baby (Uh)
 Can love me better, I can love me better, baby (Than you can)
 Can love me better, I can love me better, baby
 Can love me better, I</div></section>
-<section class="song" id="song-187"><a class="back" href="#">← 一覧へ戻る</a><h2>2002</h2><p class="meta">Anne-Marie ・ 2018</p><div class="lyrics">I will always remember
+<section class="song" id="song-187"><a class="back" href="#">← Back to list</a><h2>2002</h2><p class="meta">Anne-Marie · 2018</p><div class="lyrics">I will always remember
 The day you kissed my lips, light as a feather
 And it went just like this, No, it&#x27;s never been better 
 than the summer Of 2002 (Ooh)
@@ -11339,7 +11339,7 @@ Ooh, ooh
 On the day we fell in love
 Ooh, ooh
 On the day we fell in love, love, love</div></section>
-<section class="song" id="song-188"><a class="back" href="#">← 一覧へ戻る</a><h2>Kings &amp; Queens</h2><p class="meta">Ava Max ・ 2020</p><div class="lyrics">If all of the kings had their queens on the throne
+<section class="song" id="song-188"><a class="back" href="#">← Back to list</a><h2>Kings &amp; Queens</h2><p class="meta">Ava Max · 2020</p><div class="lyrics">If all of the kings had their queens on the throne
 We would pop champagne and raise a toast
 To all of the queens who are fighting alone
 Baby, you&#x27;re not dancing on your own
@@ -11382,7 +11382,7 @@ To all of the queens who are fighting alone
 Baby, you&#x27;re not dancing on your own
 Oh-oh-oh-oh-oh-oh-oh-oh, oh-oh
 Oh-oh-oh-oh-oh-oh-oh-oh, oh-oh</div></section>
-<section class="song" id="song-189"><a class="back" href="#">← 一覧へ戻る</a><h2>Made You Look</h2><p class="meta">Meghan Trainor ・ 2022</p><div class="lyrics">I could have my Gucci on
+<section class="song" id="song-189"><a class="back" href="#">← Back to list</a><h2>Made You Look</h2><p class="meta">Meghan Trainor · 2022</p><div class="lyrics">I could have my Gucci on
 I could wear my Louis Vuitton
 But even with nothin&#x27; on
 Bet I made you look (I made you look)
@@ -11427,7 +11427,7 @@ Yeah, I look good in my Versace dress (Take it off, baby)
 But I&#x27;m hotter when my morning hair&#x27;s a mess
 &#x27;Cause even with my hoodie on
 Bet I made you look (Said, I made you look)</div></section>
-<section class="song" id="song-190"><a class="back" href="#">← 一覧へ戻る</a><h2>abcdefu</h2><p class="meta">GAYLE ・ 2021</p><div class="lyrics">Fuck you and your mom and your sister and your job
+<section class="song" id="song-190"><a class="back" href="#">← Back to list</a><h2>abcdefu</h2><p class="meta">GAYLE · 2021</p><div class="lyrics">Fuck you and your mom and your sister and your job
 And your broke-ass car and that shit you call art
 Fuck you and your friends that I&#x27;ll never see again
 Everybody but your dog, you can all fuck off
@@ -11478,7 +11478,7 @@ And your mom and your sister and your job
 And your broke-ass car and that shit you call art
 Fuck you and your friends that I&#x27;ll never see again
 Everybody but your dog, you can all fuck off</div></section>
-<section class="song" id="song-191"><a class="back" href="#">← 一覧へ戻る</a><h2>Sweet Dreams (Are Made of This)</h2><p class="meta">Eurythmics ・ 1983</p><div class="lyrics">Sweet dreams are made of this
+<section class="song" id="song-191"><a class="back" href="#">← Back to list</a><h2>Sweet Dreams (Are Made of This)</h2><p class="meta">Eurythmics · 1983</p><div class="lyrics">Sweet dreams are made of this
 Who am I to disagree?
 I travel the world and the seven seas
 Everybody&#x27;s looking for something
@@ -11528,7 +11528,7 @@ Who am I to disagree?
 I travel the world and the seven seas
 Everybody&#x27;s looking for something
 Sweet dreams are made of this</div></section>
-<section class="song" id="song-192"><a class="back" href="#">← 一覧へ戻る</a><h2>After LIKE</h2><p class="meta">IVE ・ 2022</p><div class="lyrics">Tto moreuji nae maeumi
+<section class="song" id="song-192"><a class="back" href="#">← Back to list</a><h2>After LIKE</h2><p class="meta">IVE · 2022</p><div class="lyrics">Tto moreuji nae maeumi
 Jeo nalsshicheoreom bakkwilji
 Nal najocha da al su eopseuni
 
@@ -11736,7 +11736,7 @@ You and I
 It&#x27;s more than &#x27;LIKE&#x27;
 What&#x27;s after &#x27;LIKE&#x27;?
 What&#x27;s after &#x27;LIKE&#x27;?</div></section>
-<section class="song" id="song-193"><a class="back" href="#">← 一覧へ戻る</a><h2>Bam Bam</h2><p class="meta">Camila Cabello, Ed Sheeran ・ 2022 ・ デュエット</p><div class="lyrics">You said you hated the ocean, but you&#x27;re surfin&#x27; now
+<section class="song" id="song-193"><a class="back" href="#">← Back to list</a><h2>Bam Bam</h2><p class="meta">Camila Cabello, Ed Sheeran · 2022 · Duet</p><div class="lyrics">You said you hated the ocean, but you&#x27;re surfin&#x27; now
 I said I&#x27;d love you for life, but I just sold our house
 We were kids at the start, I guess we&#x27;re grown-ups now, mmm
 Couldn&#x27;t ever imagine even havin&#x27; doubts
@@ -11820,7 +11820,7 @@ Now I, now I&#x27;m dancin&#x27; (Keep dancin&#x27;, yeah)
 (Ba-da, bam, bam, bam, bam, bam, bam)
 And now I&#x27;m dancin&#x27; (Keep dancin&#x27;, yeah)
 Now I&#x27;m dancin&#x27; (Keep dancin&#x27;, yeah, yeah, yeah, yeah)</div></section>
-<section class="song" id="song-194"><a class="back" href="#">← 一覧へ戻る</a><h2>So Sick</h2><p class="meta">Ne-Yo ・ 2005</p><div class="lyrics">Mmm, mmm, yeah
+<section class="song" id="song-194"><a class="back" href="#">← Back to list</a><h2>So Sick</h2><p class="meta">Ne-Yo · 2005</p><div class="lyrics">Mmm, mmm, yeah
 Do, do, do, do, do, do, do-do
 Ooh, yeah
 
@@ -11883,7 +11883,7 @@ So why can&#x27;t I turn off the radio?
 
 Why can&#x27;t I turn off the radio?
 Why can&#x27;t I turn off the radio?</div></section>
-<section class="song" id="song-195"><a class="back" href="#">← 一覧へ戻る</a><h2>Because of You</h2><p class="meta">Ne-Yo ・ 2007</p><div class="lyrics">Ooh-ooh-ooh, ooh-ooh-ooh, oh
+<section class="song" id="song-195"><a class="back" href="#">← Back to list</a><h2>Because of You</h2><p class="meta">Ne-Yo · 2007</p><div class="lyrics">Ooh-ooh-ooh, ooh-ooh-ooh, oh
 Ooh-oh-oh-oh-oh, ooh-oh-oh-oh-oh, woah
 Hmm
 
@@ -11952,7 +11952,7 @@ Never get enough (Oh, never get enough)
 She&#x27;s the sweetest drug
 
 She&#x27;s the sweetest drug</div></section>
-<section class="song" id="song-196"><a class="back" href="#">← 一覧へ戻る</a><h2>Now and Then</h2><p class="meta">The Beatles ・ 2023</p><div class="lyrics">Now and Then
+<section class="song" id="song-196"><a class="back" href="#">← Back to list</a><h2>Now and Then</h2><p class="meta">The Beatles · 2023</p><div class="lyrics">Now and Then
 The Beatles
 
 (One, two, three)
@@ -11995,7 +11995,7 @@ And if I make it through
 It&#x27;s all because of you
 
 (Good one)</div></section>
-<section class="song" id="song-197"><a class="back" href="#">← 一覧へ戻る</a><h2>Birthday</h2><p class="meta">The Beatles ・ 1968</p><div class="lyrics">You say it&#x27;s your birthday,
+<section class="song" id="song-197"><a class="back" href="#">← Back to list</a><h2>Birthday</h2><p class="meta">The Beatles · 1968</p><div class="lyrics">You say it&#x27;s your birthday,
 It&#x27;s my birthday too, yeah;
 They say it&#x27;s your birthday,
 We&#x27;re gonna have a good time;
@@ -12016,7 +12016,7 @@ They say it&#x27;s your birthday,
 we&#x27;re gonna have a good time;
 I&#x27;m glad it&#x27;s your birthday,
 Happy birthday to you.</div></section>
-<section class="song" id="song-198"><a class="back" href="#">← 一覧へ戻る</a><h2>I Am the Walrus</h2><p class="meta">The Beatles ・ 1967</p><div class="lyrics">I am he as you are he as you are me
+<section class="song" id="song-198"><a class="back" href="#">← Back to list</a><h2>I Am the Walrus</h2><p class="meta">The Beatles · 1967</p><div class="lyrics">I am he as you are he as you are me
 And we are all together
 See how they run like pigs from a gun
 See how they fly, I&#x27;m cryin&#x27;
@@ -12094,7 +12094,7 @@ Joob! Joob!
 [Outro]
 Umpa, umpa, stick it up your jumper
 Everybody&#x27;s got one, everybody&#x27;s got one</div></section>
-<section class="song" id="song-199"><a class="back" href="#">← 一覧へ戻る</a><h2>Across the Universe</h2><p class="meta">The Beatles ・ 1969</p><div class="lyrics">Words are flowing out like endless rain into a paper cup,
+<section class="song" id="song-199"><a class="back" href="#">← Back to list</a><h2>Across the Universe</h2><p class="meta">The Beatles · 1969</p><div class="lyrics">Words are flowing out like endless rain into a paper cup,
 They slither while they pass, they slip away across the universe.
 Pools of sorrow waves of joy are drifting through my opened mind,
 Possessing and caressing me.
@@ -12122,7 +12122,7 @@ And calls me on and on across the universe
 Jai guru deva om
 Nothing&#x27;s gonna change my world
 Nothing&#x27;s gonna change my world.</div></section>
-<section class="song" id="song-200"><a class="back" href="#">← 一覧へ戻る</a><h2>Alone</h2><p class="meta">Heart ・ 1987</p><div class="lyrics">I hear the ticking of the clock
+<section class="song" id="song-200"><a class="back" href="#">← Back to list</a><h2>Alone</h2><p class="meta">Heart · 1987</p><div class="lyrics">I hear the ticking of the clock
 I&#x27;m lying here, the room&#x27;s pitch dark
 I wonder where you are tonight
 No answer on the telephone
@@ -12153,7 +12153,7 @@ How do I get you alone?
 How do I get you alone?
 How do I get you alone?
 Alone, alone</div></section>
-<section class="song" id="song-201"><a class="back" href="#">← 一覧へ戻る</a><h2>Eternal Flame</h2><p class="meta">The Bangles ・ 1989</p><div class="lyrics">Close your eyes, give me your hand, darling
+<section class="song" id="song-201"><a class="back" href="#">← Back to list</a><h2>Eternal Flame</h2><p class="meta">The Bangles · 1989</p><div class="lyrics">Close your eyes, give me your hand, darling
 Do you feel my heart beating?
 Do you understand?
 Do you feel the same?
@@ -12206,7 +12206,7 @@ Do you feel the same? (Eh)
 Am I only dreamin&#x27;? Ah
 Is this burning an eternal flame?
 Close your eyes, give me your hand, darling</div></section>
-<section class="song" id="song-202"><a class="back" href="#">← 一覧へ戻る</a><h2>This Love</h2><p class="meta">Maroon 5 ・ 2004</p><div class="lyrics">I was so high I did not recognize
+<section class="song" id="song-202"><a class="back" href="#">← Back to list</a><h2>This Love</h2><p class="meta">Maroon 5 · 2004</p><div class="lyrics">I was so high I did not recognize
 The fire burning in her eyes
 The chaos that controlled my mind
 Whispered goodbye as she got on a plane
@@ -12259,7 +12259,7 @@ I have no choice, &#x27;cause I won&#x27;t say goodbye anymore
 This love has taken its toll on me
 She said goodbye too many times before
 And her heart is breaking in front of me</div></section>
-<section class="song" id="song-203"><a class="back" href="#">← 一覧へ戻る</a><h2>Oh, Pretty Woman</h2><p class="meta">Roy Orbison ・ 1964</p><div class="lyrics">Pretty woman, walking down the street
+<section class="song" id="song-203"><a class="back" href="#">← Back to list</a><h2>Oh, Pretty Woman</h2><p class="meta">Roy Orbison · 1964</p><div class="lyrics">Pretty woman, walking down the street
 Pretty woman, the kind I&#x27;d like to meet
 Pretty woman, I don&#x27;t believe you
 You&#x27;re not the truth
@@ -12293,7 +12293,7 @@ What do I see?
 Is she walking back to me?
 Yeah, she&#x27;s walking back to me
 Oh, oh, pretty woman</div></section>
-<section class="song" id="song-204"><a class="back" href="#">← 一覧へ戻る</a><h2>Night Changes</h2><p class="meta">One Direction ・ 2014</p><div class="lyrics">Goin&#x27; out tonight, changes into something red
+<section class="song" id="song-204"><a class="back" href="#">← Back to list</a><h2>Night Changes</h2><p class="meta">One Direction · 2014</p><div class="lyrics">Goin&#x27; out tonight, changes into something red
 Her mother doesn&#x27;t like that kind of dress
 Everything she never had, she&#x27;s showing off
 Driving too fast, moon is breaking through her hair
@@ -12346,7 +12346,7 @@ Reminds her of the missing piece of innocence she lost
 (Ooh) It will never change, baby
 (Ooh) It will never change, baby
 (Ooh) It will never change me and you</div></section>
-<section class="song" id="song-205"><a class="back" href="#">← 一覧へ戻る</a><h2>Symphony</h2><p class="meta">Clean Bandit, Zara Larsson ・ 2017</p><div class="lyrics">I&#x27;ve been hearin&#x27; symphonies
+<section class="song" id="song-205"><a class="back" href="#">← Back to list</a><h2>Symphony</h2><p class="meta">Clean Bandit, Zara Larsson · 2017</p><div class="lyrics">I&#x27;ve been hearin&#x27; symphonies
 Before, all I heard was silence
 A rhapsody for you and me
 And every melody is timeless
@@ -12403,7 +12403,7 @@ Will you hold me tight and not let go?
 Symphony
 Like a love song on the radio
 Will you hold me tight and not let go?</div></section>
-<section class="song" id="song-206"><a class="back" href="#">← 一覧へ戻る</a><h2>Mama</h2><p class="meta">Clean Bandit, Ellie Goulding ・ 2019</p><div class="lyrics">Oh mama, ooh la, ooh la, ooh la
+<section class="song" id="song-206"><a class="back" href="#">← Back to list</a><h2>Mama</h2><p class="meta">Clean Bandit, Ellie Goulding · 2019</p><div class="lyrics">Oh mama, ooh la, ooh la, ooh la
 Don&#x27;t know what this is
 Oh mama, ooh la, ooh la, ooh la
 Oh, what do I do now?
@@ -12463,7 +12463,7 @@ All of these new emotions
 I let them out in the open
 Oh mama, ooh la, ooh la, ooh la
 Oh, what do I do now?</div></section>
-<section class="song" id="song-207"><a class="back" href="#">← 一覧へ戻る</a><h2>Break My Heart</h2><p class="meta">Dua Lipa ・ 2020</p><div class="lyrics">I&#x27;ve always been the one to say the first goodbye
+<section class="song" id="song-207"><a class="back" href="#">← Back to list</a><h2>Break My Heart</h2><p class="meta">Dua Lipa · 2020</p><div class="lyrics">I&#x27;ve always been the one to say the first goodbye
 Had to love and lose a hundred million times
 Had to get it wrong to know just what I like
 Now I&#x27;m falling
@@ -12537,7 +12537,7 @@ I knew that was the end of it all
 I should&#x27;ve stayed at home
 &#x27;Cause now there ain&#x27;t no letting you go
 Am I falling in love with the one that could break my heart?</div></section>
-<section class="song" id="song-208"><a class="back" href="#">← 一覧へ戻る</a><h2>Here with Me</h2><p class="meta">Marshmello, CHVRCHES ・ 2019</p><div class="lyrics">Can I tell you something just between you and me?
+<section class="song" id="song-208"><a class="back" href="#">← Back to list</a><h2>Here with Me</h2><p class="meta">Marshmello, CHVRCHES · 2019</p><div class="lyrics">Can I tell you something just between you and me?
 When I hear your voice, I know I&#x27;m finally free
 Every single word is perfect as it can be
 And I need you here with me
@@ -12577,7 +12577,7 @@ Can I tell you something just between you and me?
 When I hear your voice, I know I&#x27;m finally free
 Every single word is perfect as it can be
 &#x27;Cause I need you here with me</div></section>
-<section class="song" id="song-209"><a class="back" href="#">← 一覧へ戻る</a><h2>Dance Monkey</h2><p class="meta">Tones and I ・ 2019</p><div class="lyrics">They say, &quot;Oh my god, I see the way you shine
+<section class="song" id="song-209"><a class="back" href="#">← Back to list</a><h2>Dance Monkey</h2><p class="meta">Tones and I · 2019</p><div class="lyrics">They say, &quot;Oh my god, I see the way you shine
 Take your hands, my dear, and place them both in mine&quot;
 You know you stopped me dead while I was passing by
 And now I beg to see you dance just one more time
@@ -12635,7 +12635,7 @@ They say
 &quot;Move for me, move for me, move for me, eh-eh-eh
 And when you’re done, I&#x27;ll make you do it all again
 All again&quot;</div></section>
-<section class="song" id="song-210"><a class="back" href="#">← 一覧へ戻る</a><h2>All About That Bass</h2><p class="meta">Meghan Trainor ・ 2014</p><div class="lyrics">Because you know I&#x27;m all about that bass
+<section class="song" id="song-210"><a class="back" href="#">← Back to list</a><h2>All About That Bass</h2><p class="meta">Meghan Trainor · 2014</p><div class="lyrics">Because you know I&#x27;m all about that bass
 &#x27;Bout that bass, no treble
 I&#x27;m all about that bass, &#x27;bout that bass, no treble
 I&#x27;m all about that bass, &#x27;bout that bass, no treble
@@ -12701,7 +12701,7 @@ Hey-hey, ooh
 You know you love this bass
 Ah-ah-ah-ah-ah-ah, yeah
 Ha-ha</div></section>
-<section class="song" id="song-211"><a class="back" href="#">← 一覧へ戻る</a><h2>Levitating</h2><p class="meta">Dua Lipa ・ 2020</p><div class="lyrics">If you wanna run away with me, I know a galaxy
+<section class="song" id="song-211"><a class="back" href="#">← Back to list</a><h2>Levitating</h2><p class="meta">Dua Lipa · 2020</p><div class="lyrics">If you wanna run away with me, I know a galaxy
 And I can take you for a ride
 I had a premonition that we fell into a rhythm
 Where the music don&#x27;t stop for life
@@ -12786,7 +12786,7 @@ I&#x27;m levitating
 You, moonlight, you&#x27;re my starlight (You&#x27;re the moonlight)
 I need you all night, come on, dance with me
 I&#x27;m levitating</div></section>
-<section class="song" id="song-212"><a class="back" href="#">← 一覧へ戻る</a><h2>We Don&#x27;t Talk Anymore</h2><p class="meta">Charlie Puth, Selena Gomez ・ 2016 ・ デュエット</p><div class="lyrics">We don&#x27;t talk anymore, we don&#x27;t talk anymore
+<section class="song" id="song-212"><a class="back" href="#">← Back to list</a><h2>We Don&#x27;t Talk Anymore</h2><p class="meta">Charlie Puth, Selena Gomez · 2016 · Duet</p><div class="lyrics">We don&#x27;t talk anymore, we don&#x27;t talk anymore
 We don&#x27;t talk anymore like we used to do
 We don&#x27;t love anymore
 What was all of it for?
@@ -12866,7 +12866,7 @@ We don&#x27;t talk anymore, oh, woah
 (Now I can&#x27;t get you outta my brain)
 Oh, it&#x27;s such a shame
 That we don&#x27;t talk anymore</div></section>
-<section class="song" id="song-213"><a class="back" href="#">← 一覧へ戻る</a><h2>APT.</h2><p class="meta">ROSÉ, Bruno Mars ・ 2024 ・ デュエット</p><div class="lyrics">채영이가 (Chaeyoung-iga)ちぇよん いが（ちょんいが）
+<section class="song" id="song-213"><a class="back" href="#">← Back to list</a><h2>APT.</h2><p class="meta">ROSÉ, Bruno Mars · 2024 · Duet</p><div class="lyrics">채영이가 (Chaeyoung-iga)ちぇよん いが（ちょんいが）
 좋아하는 (joahaneun)じょあ はぬん（じょあぬん）
 랜덤 게임 (Random game)
 랜덤 게임 (Random game)
@@ -12955,7 +12955,7 @@ Just meet me at the (Uh, uh-huh, uh-huh)
 아파트, 아파트
 아파트, 아파트
 Uh, uh-huh, uh-huh</div></section>
-<section class="song" id="song-214"><a class="back" href="#">← 一覧へ戻る</a><h2>I Will Survive</h2><p class="meta">Gloria Gaynor ・ 1978</p><div class="lyrics">At first I was afraid, I was petrified
+<section class="song" id="song-214"><a class="back" href="#">← Back to list</a><h2>I Will Survive</h2><p class="meta">Gloria Gaynor · 1978</p><div class="lyrics">At first I was afraid, I was petrified
 Kept thinkin&#x27; I could never live without you by my side
 But then I spent so many nights thinkin&#x27; how you did me wrong
 And I grew strong and I learned how to get along
@@ -13028,7 +13028,7 @@ And I&#x27;ll survive, I will survive, I will survive
 
 I&#x27;ve got all my life to live, and I&#x27;ve got so much love to give
 And I&#x27;ll survive, yes, I&#x27;ll survive, yeah, I&#x27;ll survive</div></section>
-<section class="song" id="song-215"><a class="back" href="#">← 一覧へ戻る</a><h2>Perfect Duet</h2><p class="meta">Ed Sheeran, Beyoncé ・ 2017 ・ デュエット</p><div class="lyrics">Perfect Duet (with Beyoncé)
+<section class="song" id="song-215"><a class="back" href="#">← Back to list</a><h2>Perfect Duet</h2><p class="meta">Ed Sheeran, Beyoncé · 2017 · Duet</p><div class="lyrics">Perfect Duet (with Beyoncé)
 
 I found a love for me
 Darling, just dive right in and follow my lead
@@ -13075,7 +13075,7 @@ Now I know I have met an angel in person
 And she looks perfect (And he looks perfect)
 No, I don&#x27;t deserve this
 You look perfect tonight</div></section>
-<section class="song" id="song-216"><a class="back" href="#">← 一覧へ戻る</a><h2>Casablanca</h2><p class="meta">Bertie Higgins ・ 1982</p><div class="lyrics">I fell in love with you watching Casablanca
+<section class="song" id="song-216"><a class="back" href="#">← Back to list</a><h2>Casablanca</h2><p class="meta">Bertie Higgins · 1982</p><div class="lyrics">I fell in love with you watching Casablanca
 Back row of the drive-in show in the flickering light
 Popcorn and cokes beneath the stars
 Became champagne and caviar
@@ -13108,7 +13108,7 @@ Please come back to me in Casablanca
 I love you more and more each day as time goes by
 
 I love you more and more each day as time goes by</div></section>
-<section class="song" id="song-217"><a class="back" href="#">← 一覧へ戻る</a><h2>Tom&#x27;s Diner</h2><p class="meta">Suzanne Vega ・ 1987</p><div class="lyrics">I am sitting in the morning
+<section class="song" id="song-217"><a class="back" href="#">← Back to list</a><h2>Tom&#x27;s Diner</h2><p class="meta">Suzanne Vega · 1987</p><div class="lyrics">I am sitting in the morning
 At the diner on the corner
 I am waiting at the counter
 For the man to pour the coffee
@@ -13158,7 +13158,7 @@ Once upon a time before the rain began
 
 And I finish up my coffee
 And it&#x27;s time to catch the train</div></section>
-<section class="song" id="song-218"><a class="back" href="#">← 一覧へ戻る</a><h2>Tom&#x27;s Diner</h2><p class="meta">DNA, Suzanne Vega ・ 1990</p><div class="lyrics">I am sitting in the morning
+<section class="song" id="song-218"><a class="back" href="#">← Back to list</a><h2>Tom&#x27;s Diner</h2><p class="meta">DNA, Suzanne Vega · 1990</p><div class="lyrics">I am sitting in the morning
 At the diner on the corner
 I am waiting at the counter
 For the man to pour the coffee
